@@ -8,7 +8,7 @@ Medication Extraction and Normalization (MedXN, pronounced [med-eks-en]) is a Ap
 Text: "Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"
 
 Step 1: Medication Extraction
-	Eg) Sulfasalazine [AZULFIDINE] RxCUI=”9524::IN::202770::BN”
+	Eg) Sulfasalazine [AZULFIDINE] RxCUI="9524::IN::202770::BN"
 Step 2: Attribute Extraction
 	Eg) 500-mg (strength), 2 (dose), tabs (form), mouth (route), two times a day (frequency)
 Step 3: Medication & Attribute Association
