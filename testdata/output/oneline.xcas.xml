@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAS version="2">
+    <uima.cas.Sofa _indexed="0" _id="6" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"/>
+    <uima.tcas.DocumentAnnotation _indexed="1" _id="1" _ref_sofa="6" begin="0" end="65" language="en"/>
+    <org.ohnlp.typesystem.type.textspan.Sentence _indexed="1" _id="13" _ref_sofa="6" begin="0" end="65" id="DocBegin:0" _ref_segment="288"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="107" _ref_sofa="6" begin="0" end="26" chunkType="NP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="112" _ref_sofa="6" begin="27" end="33" chunkType="VP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="117" _ref_sofa="6" begin="34" end="40" chunkType="NP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="122" _ref_sofa="6" begin="41" end="43" chunkType="PP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="127" _ref_sofa="6" begin="44" end="49" chunkType="NP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="132" _ref_sofa="6" begin="50" end="59" chunkType="NP"/>
+    <org.ohnlp.typesystem.type.syntax.Chunk _indexed="1" _id="137" _ref_sofa="6" begin="60" end="65" chunkType="NP"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="142" _ref_sofa="6" begin="0" end="13" tokenNumber="0" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="154" _ref_sofa="6" begin="14" end="26" tokenNumber="1" partOfSpeech="NNP" capitalization="2" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="166" _ref_sofa="6" begin="27" end="30" tokenNumber="2" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="186" _ref_sofa="6" begin="31" end="33" tokenNumber="4" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="207" _ref_sofa="6" begin="36" end="40" tokenNumber="6" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="219" _ref_sofa="6" begin="41" end="43" tokenNumber="7" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="231" _ref_sofa="6" begin="44" end="49" tokenNumber="8" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="252" _ref_sofa="6" begin="54" end="59" tokenNumber="10" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="264" _ref_sofa="6" begin="60" end="61" tokenNumber="11" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.WordToken _indexed="1" _id="276" _ref_sofa="6" begin="62" end="65" tokenNumber="12" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <org.ohnlp.typesystem.type.syntax.PunctuationToken _indexed="1" _id="178" _ref_sofa="6" begin="30" end="31" tokenNumber="3" partOfSpeech="-"/>
+    <org.ohnlp.typesystem.type.syntax.NumToken _indexed="1" _id="198" _ref_sofa="6" begin="34" end="35" tokenNumber="5" partOfSpeech="CD" numType="0"/>
+    <org.ohnlp.typesystem.type.syntax.NumToken _indexed="1" _id="243" _ref_sofa="6" begin="50" end="53" tokenNumber="9" partOfSpeech="CD" numType="0"/>
+    <org.ohnlp.typesystem.type.textspan.Segment _indexed="1" _id="288" _ref_sofa="6" begin="0" end="65" id="DocBegin" value="DocBegin"/>
+    <org.ohnlp.medtagger.type.ConceptMention _indexed="1" _id="294" _ref_sofa="6" begin="0" end="13" normTarget="Sulfasalazine" semGroup="9524::IN" _ref_sentence="13"/>
+    <org.ohnlp.medxn.type.MedAttr _indexed="1" _id="305" _ref_sofa="6" begin="36" end="40" tag="form"/>
+    <org.ohnlp.medxn.type.MedAttr _indexed="1" _id="310" _ref_sofa="6" begin="27" end="33" tag="strength"/>
+    <org.ohnlp.medxn.type.MedAttr _indexed="1" _id="315" _ref_sofa="6" begin="34" end="35" tag="dosage"/>
+    <org.ohnlp.medxn.type.MedAttr _indexed="1" _id="320" _ref_sofa="6" begin="50" end="65" tag="frequency"/>
+    <org.ohnlp.medxn.type.MedAttr _indexed="1" _id="325" _ref_sofa="6" begin="44" end="49" tag="route"/>
+    <org.ohnlp.medxn.type.Drug _indexed="1" _id="330" _ref_sofa="6" begin="0" end="13" _ref_name="294" _ref_attrs="344" normDrug="sulfasalazine&lt;in&gt;500 mg&lt;st&gt;oral tablet&lt;df&gt;" normRxType="SCD" normRxCui="198232" normRxName="Sulfasalazine 500 MG Oral Tablet" normDrug2="9524&lt;in&gt;500 mg&lt;st&gt;317541&lt;df&gt;" normRxType2="SCD" normRxCui2="198232" normRxName2="Sulfasalazine 500 MG Oral Tablet"/>
+    <org.ohnlp.medxn.type.LookupWindow _indexed="1" _id="351" _ref_sofa="6" begin="0" end="65"/>
+    <uima.cas.FSArray _id="344" size="5">
+        <i>310</i>
+        <i>315</i>
+        <i>305</i>
+        <i>325</i>
+        <i>320</i>
+    </uima.cas.FSArray>
+</CAS>
