@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>org.ohnlp.medxn.ae.ACLookupDrugAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>ACLookupDrugAnnotator</name>
+    <description>AhoCorasickLookup to find drug
+Lowercase matching - no lvg, stopword, and abbr process.</description>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <imports>
+        <import name="org.ohnlp.medxn.types.MedXNTypes"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">org.ohnlp.typesystem.type.syntax.BaseToken</type>
+        </inputs>
+        <outputs>
+          <type allAnnotatorFeatures="true">org.ohnlp.medtagger.type.ConceptMention</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <externalResourceDependencies>
+    <externalResourceDependency>
+      <key>RxNorm_BNIN</key>
+      <description>binds to the RxNorm_BNIN</description>
+      <optional>false</optional>
+    </externalResourceDependency>
+  </externalResourceDependencies>
+<resourceManagerConfiguration/>
+</analysisEngineDescription>
