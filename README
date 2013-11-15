@@ -5,7 +5,7 @@ Introduction
 Medication Extraction and Normalization (MedXN, pronounced [med-eks-en]) is a Apache UIMA-based medication information extraction system that focuses on assigning the most specific RxNorm RxCUI to medication description. MedXN finds medication and its complete attributes and normalize them to the most specific RxNorm RxCUI using flexible matching, abbreviation expansion, inference, etc. MedXN uses externalized resources (ie, medication dictionary, attribute definitions, and regular expression attribute patterns) to allow a simple customization process for the needs of end users. 
 
 <MedXN High-level Algorithm>
-Text: “Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day”
+Text: "Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"
 
 Step 1: Medication Extraction
 	Eg) Sulfasalazine [AZULFIDINE] RxCUI=”9524::IN::202770::BN”
