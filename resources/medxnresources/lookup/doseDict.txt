@@ -1,0 +1,277 @@
+12 hour extended release capsule|408209|12 hour Extended Release Capsule
+12 hour extended release capsules|408209|12 hour Extended Release Capsule
+12 hour extended release tablet|316934|12 hour Extended Release Tablet
+12 hour extended release tablets|316934|12 hour Extended Release Tablet
+16 hour transdermal patch|316935|16 Hour Transdermal Patch
+16 hour transdermal patches|316935|16 Hour Transdermal Patch
+24 hour extended release capsule|316997|24 Hour Extended Release Capsule
+24 hour extended release capsules|316997|24 Hour Extended Release Capsule
+24 hour extended release tablet|316936|24 Hour Extended Release Tablet
+24 hour extended release tablets|316936|24 Hour Extended Release Tablet
+24 hour transdermal patch|316937|24 Hour Transdermal Patch
+24 hour transdermal patches|316937|24 Hour Transdermal Patch
+72 hour transdermal patch|316938|72 Hour Transdermal Patch
+72 hour transdermal patches|316938|72 Hour Transdermal Patch
+augmented topical cream|848123|Augmented Topical Cream
+augmented topical gel|848198|Augmented Topical Gel
+augmented topical gels|848198|Augmented Topical Gel
+augmented topical lotion|848124|Augmented Topical Lotion
+augmented topical ointment|848125|Augmented Topical Ointment
+bar|317692|Bar
+bar soap|238621|Bar Soap
+beads|316993|Beads
+biweekly transdermal patch|316939|Biweekly Transdermal Patch
+biweekly transdermal patches|316939|Biweekly Transdermal Patch
+buccal film|858080|Buccal Film
+buccal tablet|970789|Buccal Tablet
+buccal tablets|970789|Buccal Tablet
+cake|317680|Topical Cake
+caplet|91060|Caplet
+cap|1995|Capsule
+caplets|91060|Caplet
+caps|1995|Capsule
+capsule|1995|Capsule
+capsules|1995|Capsule
+cement|657707|Cement
+chewable bar|316941|Chewable Bar
+chewable tablet|91058|Chewable Tablet
+chewable tablets|91058|Chewable Tablet
+chewing gum|402499|Chewing Gum
+cleanser liquid|316953|Liquid Cleanser
+cream|446669|Cream
+crystals|446993|Crystals
+cutaneous foam|346285|Topical Foam
+cutaneous powder|317009|Topical Powder
+cutaneous solution|316986|Topical Solution
+disintegrating tablet|316942|Disintegrating Tablet
+disintegrating tablets|316942|Disintegrating Tablet
+disk|317689|Disk
+douche|479172|Douche
+drug implant|657710|Drug Implant
+drug pellets|317691|Pellet
+drug pellet|317691|Pellet
+dry powder inhaler|744995|Dry Powder Inhaler
+dry powder inhalers|744995|Dry Powder Inhaler
+ear cream|316971|Otic Cream
+ear ointment|316972|Otic Ointment
+elixir|196572|Elixir
+enema|317678|Enema
+enteric coated capsule|316995|Enteric Coated Capsule
+enteric coated capsules|316995|Enteric Coated Capsule
+enteric coated cap|316995|Enteric Coated Capsule
+enteric coated caps|316995|Enteric Coated Capsule
+enteric coated tablet|10312|Enteric Coated Tablet
+enteric-coated tablets|10312|Enteric Coated Tablet
+enteric coated tab|10312|Enteric Coated Tablet
+enteric coated tabs|10312|Enteric Coated Tablet
+extended release capsule|316943|Extended Release Capsule
+extended release capsules|316943|Extended Release Capsule
+extended release cap|316943|Extended Release Capsule
+extended release caps|316943|Extended Release Capsule
+extended release enteric coated capsule|316944|Extended Release Enteric Coated Capsule
+extended release enteric coated capsules|316944|Extended Release Enteric Coated Capsule
+extended release enteric coated cap|316944|Extended Release Enteric Coated Capsule
+extended release enteric coated caps|316944|Extended Release Enteric Coated Capsule
+extended release enteric coated tablet|316998|Extended Release Enteric Coated Tablet
+extended release enteric coated tablets|316998|Extended Release Enteric Coated Tablet
+extended release enteric coated tab|316998|Extended Release Enteric Coated Tablet
+extended release enteric coated tabs|316998|Extended Release Enteric Coated Tablet
+extended release suspension|316946|Extended Release Suspension
+extended release suspensions|316946|Extended Release Suspension
+extended release tablet|316945|Extended Release Tablet
+extended release tablets|316945|Extended Release Tablet
+extended release tab|316945|Extended Release Tablet
+extended release tabs|316945|Extended Release Tablet
+eye cream|317544|Ophthalmic Cream
+eye gel|316963|Ophthalmic Gel
+eye gels|316963|Ophthalmic Gel
+eye ointment|91344|Ophthalmic Ointment
+flakes|316947|Flakes
+foam|316948|Foam
+gargle|7067|Mouthwash
+gas|1021221|Gas
+gas for inhalation|316999|Gas for Inhalation
+gastro-resistant tablet|10312|Enteric Coated Tablet
+gastro-resistant tablets|10312|Enteric Coated Tablet
+gel|4718|Gel
+gels|4718|Gel
+granules|317690|Granules
+inhalant|154625|Inhalant
+inhalant powder|317000|Inhalant Powder
+inhalants|154625|Inhalant
+inhalant solution|346161|Inhalant Solution
+inhalation gas|316999|Gas for Inhalation
+inhalation powder|317000|Inhalant Powder
+inhalation solution|346161|Inhalant Solution
+injectable solution|316949|Injectable Solution
+injectable suspension|316950|Injectable Suspension
+intramuscular solution|346166|Intramuscular Solution
+intramuscular suspension|346167|Intramuscular Suspension
+intraperitoneal solution|316951|Intraperitoneal Solution
+intrathecal suspension|317001|Intrathecal Suspension
+intravenous solution|316952|Intravenous Solution
+intravenous suspension|346168|Intravenous Suspension
+irrigation solution|152903|Irrigation Solution
+jelly|4718|Gel
+jellies|4718|Gel
+liquid|90230|Liquid
+liquid cleanser|316953|Liquid Cleanser
+lotion|142222|Lotion
+lozenge|316992|Lozenge
+lozenges|316992|Lozenge
+medicated bar soap|316954|Medicated Bar Soap
+medicated liquid soap|316955|Medicated Liquid Soap
+medicated pad|797271|Medicated Pad
+medicated pads|797271|Medicated Pad
+medicated shampoo|106332|Medicated Shampoo
+medicated shampoos|106332|Medicated Shampoo
+medicated tape|797685|Medicated Tape
+metered dose inhaler|721654|Metered Dose Inhaler
+metered dose inhalers|721654|Metered Dose Inhaler
+mouthwash|7067|Mouthwash
+mouthwashe|7067|Mouthwash
+mouthwashes|7067|Mouthwash
+mouthwash rinse|7067|Mouthwash
+mouthwash/rinse|7067|Mouthwash
+mucosal spray|346163|Mucosal Spray
+mucous membrane topical solution|316956|Mucous Membrane Topical Solution
+nasal cream|316957|Nasal Cream
+nasal gel|316960|Nasal Gel
+nasal gels|316960|Nasal Gel
+nasal inhalant|316959|Nasal Inhalant
+nasal inhaler|721655|Nasal Inhaler
+nasal jelly|316960|Nasal Gel
+nasal jellies|316960|Nasal Gel
+nasal ointment|316961|Nasal Ointment
+nasal solution|316962|Nasal Solution
+nasal spray|126542|Nasal Spray
+nasal sprays|126542|Nasal Spray
+nasal suspension|346290|Nasal Suspension
+oil|1021284|Oil
+ointment|7628|Ointment
+ointments|7628|Ointment
+ophthalmic cream|317544|Ophthalmic Cream
+ophthalmic gel|316963|Ophthalmic Gel
+ophthalmic gels|316963|Ophthalmic Gel
+ophthalmic irrigation solution|244286|Ophthalmic Irrigation Solution
+ophthalmic jelly|316963|Ophthalmic Gel
+ophthalmic jellies|316963|Ophthalmic Gel
+ophthalmic ointment|91344|Ophthalmic Ointment
+ophthalmic sol|7670|Ophthalmic Solution
+ophthalmic solution|7670|Ophthalmic Solution
+ophthalmic suspension|316964|Ophthalmic Suspension
+oral capsule|316965|Oral Capsule
+oral capsules|316965|Oral Capsule
+oral cream|316966|Oral Cream
+oral foam|346284|Oral Foam
+oral gel|346169|Oral Gel
+oral gels|346169|Oral Gel
+oral jelly|346169|Oral Gel
+oral jellies|346169|Oral Gel
+oral ointment|346288|Oral Ointment
+oral paste|346171|Oral Paste
+oral powder|346289|Oral Powder
+oral rinse|7067|Mouthwash
+oral solution|316968|Oral Solution
+oral spray|346164|Oral Spray
+oral sprays|346164|Oral Spray
+oral strip|704866|Oral Strip
+oral suspension|316969|Oral Suspension
+oral tablet|317541|Oral Tablet
+oral tablets|317541|Oral Tablet
+oral troche|316992|Lozenge
+orderable drug form|316970|Orderable Drug Form
+otic cream|316971|Otic Cream
+otic ointment|316972|Otic Ointment
+otic solution|316973|Otic Solution
+otic suspension|316974|Otic Suspension
+pack|746839|Pack
+packs|746839|Pack
+paste|402496|Paste
+patch|318130|Patch
+patches|318130|Patch
+pellet|317691|Pellet
+pellets|317691|Pellet
+powder|8612|Powder
+powders|8612|Powder
+powder spray|317004|Powder Spray
+powder sprays|317004|Powder Spray
+prefilled applicator|757352|Prefilled Applicator
+prefilled syringe|721656|Prefilled Syringe
+pudding|317846|Pudding
+rectal cream|316975|Rectal Cream
+rectal foam|317542|Rectal Foam
+rectal gel|346170|Rectal Gel
+rectal gels|346170|Rectal Gel
+rectal jelly|346170|Rectal Gel
+rectal jellies|346170|Rectal Gel
+rectal ointment|317005|Rectal Ointment
+rectal powder|316976|Rectal Powder
+rectal solution|317006|Rectal Solution
+rectal spray|316977|Rectal Spray
+rectal sprays|316977|Rectal Spray
+rectal suppositories|316978|Rectal Suppository
+rectal suppository|316978|Rectal Suppository
+rectal suspension|316979|Rectal Suspension
+salves|7628|Ointment
+soap topical bar|238621|Bar Soap
+solid|447005|Solid
+solution|450530|Solution
+solution for injection|316949|Injectable Solution
+spray|346162|Spray
+sprays|346162|Spray
+sublingual tablet|317007|Sublingual Tablet
+sublingual tablets|317007|Sublingual Tablet
+suppositories|10249|Suppository
+suppository|10249|Suppository
+suspension|10269|Suspension
+suspensions|10269|Suspension
+suspension for injection|316950|Injectable Suspension
+sustained release buccal tablet|316980|Sustained Release Buccal Tablet
+syrup|316981|Syrup
+tablet|10311|Tablet
+tablets|10311|Tablet
+toothpaste|10652|Toothpaste
+toothpaste dental toothpaste|10652|Toothpaste
+toothpastes|10652|Toothpaste
+topical cake|317680|Topical Cake
+topical cream|316982|Topical Cream
+topical foam|346285|Topical Foam
+topical gel|346286|Topical Gel
+topical gels|346286|Topical Gel
+topical lotion|316983|Topical Lotion
+topical oil|316984|Topical Oil
+topical ointment|316985|Topical Ointment
+topical powder|317009|Topical Powder
+topical solution|316986|Topical Solution
+topical spray|346165|Topical Spray
+topical sprays|346165|Topical Spray
+transdermal patch|316987|Transdermal Patch
+transdermal patches|316987|Transdermal Patch
+troche|316992|Lozenge
+unguents|7628|Ointment
+urethral gel|346287|Urethral Gel
+urethral gels|346287|Urethral Gel
+urethral suppository|317543|Urethral Suppository
+urethral suppositories|317543|Urethral Suppository
+vaginal cream|11103|Vaginal Cream
+vaginal creams|11103|Vaginal Cream
+vaginal foam|11107|Vaginal Foam
+vaginal foams|11107|Vaginal Foam
+vaginal gel|11108|Vaginal Gel
+vaginal gels|11108|Vaginal Gel
+vaginal jellies|11108|Vaginal Gel
+vaginal jelly|11108|Vaginal Gel
+vaginal ointment|317010|Vaginal Ointment
+vaginal powder|316988|Vaginal Powder
+vaginal ring|11109|Vaginal Ring
+vaginal rings|11109|Vaginal Ring
+vaginal spray|479278|Vaginal Spray
+vaginal sprays|479278|Vaginal Spray
+vaginal suppositories|337840|Vaginal Suppository
+vaginal suppository|337840|Vaginal Suppository
+vaginal tablet|11110|Vaginal Tablet
+vaginal tablets|11110|Vaginal Tablet
+wafer|316989|Wafer
+weekly transdermal patch|316990|Weekly Transdermal Patch
+weekly transdermal patches|316990|Weekly Transdermal Patch
