@@ -43,7 +43,7 @@
                 <nameValuePair>
                     <name>OutputFile</name>
                     <value>
-                        <string>C:\Temp\testdata.out</string>
+                        <string>/tmp/testdata.out</string>
                     </value>
                 </nameValuePair>
             </configurationParameterSettings>
