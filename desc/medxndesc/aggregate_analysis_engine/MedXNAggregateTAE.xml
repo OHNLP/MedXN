@@ -31,8 +31,8 @@
       <delegateAnalysisEngine key="ACLookupDrugAE">
       <import name="org.ohnlp.medxn.aes.ACLookupDrugAE"/>
     </delegateAnalysisEngine>
-       <delegateAnalysisEngine key="PosTaggerAE">
-      <import name="org.ohnlp.opennlp.aes.PosTaggerAE"/>
+       <delegateAnalysisEngine key="POSTaggerAE">
+      <import name="org.ohnlp.opennlp.aes.POSTaggerAE"/>
     </delegateAnalysisEngine>
    <delegateAnalysisEngine key="TokenizerAE">
       <import name="org.ohnlp.opennlp.aes.TokenizerAE"/>
@@ -55,7 +55,7 @@
       <fixedFlow>
         <node>SentenceDetectorAE</node>
         <node>TokenizerAE</node>
-        <node>PosTaggerAE</node>
+        <node>POSTaggerAE</node>
         <node>ChunkerAE</node>
         <node>LineSentenceDetectorAE</node>
           <node>RuleSectionAE</node>
@@ -214,7 +214,7 @@
         <resourceName>ChunkerModel</resourceName>
       </externalResourceBinding>
        <externalResourceBinding>
-        <key>PosTaggerAE/opennlp.uima.ModelName</key>
+        <key>POSTaggerAE/opennlp.uima.ModelName</key>
         <resourceName>PosModel</resourceName>
       </externalResourceBinding>
       <externalResourceBinding>
