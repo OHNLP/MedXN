@@ -3,6 +3,7 @@
       <target name=".">
        <mkdir dir="bin"/>
        <path id="_medxn.cp">
+            <pathelement location="lib/uimaj-adapter-vinci-2.4.0.jar"/>
             <pathelement location="lib/uimaj-tools-2.4.0.jar"/>
             <pathelement location="lib/uimaj-core-2.4.0.jar"/>
             <pathelement location="lib/uimaj-cpe-2.4.0.jar"/>
@@ -24,6 +25,7 @@
             <fileset dir="bin"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/MedTagger-1.0.1.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/log4j-1.2.16.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/uimaj-adapter-vinci-2.4.0.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/uimaj-core-2.4.0.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/uimaj-cpe-2.4.0.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="lib/uimaj-tools-2.4.0.jar"/>
