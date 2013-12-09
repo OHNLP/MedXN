@@ -1,6 +1,7 @@
 
 Fixes included in MedXN-1.0.1:
 
+#118 MedXN scripts should not require lib/*. MedXN-1.0.jar does not contain all dependencies  
 #117 Update MedXN release to 1.0.1 (build MedXN-1.0.1)
 #116 Upgrade MedXN to use MedTagger-1.0.1 instead of MedTagger-1.0
 #111 When loading MedXNAggregateTAE.xml: No .xml file with name "org.ohnlp.opennlp.aes.PosTaggerAE"
