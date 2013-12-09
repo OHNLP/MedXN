@@ -141,6 +141,7 @@ public class MedExtAnnotator extends JCasAnnotator_ImplBase {
 						drugs.get(i+1).getNormTarget());
 				drugs.get(i+1).setSemGroup(drugs.get(i).getSemGroup()+"::"+
 						drugs.get(i+1).getSemGroup());
+				drugs.get(i+1).getSentence().setBegin(drugs.get(i).getSentence().getBegin()); 
 				
 				drugs.remove(i);
 			}			
