@@ -7,6 +7,10 @@
 
 Medication Extraction and Normalization (MedXN, pronounced `[med-eks-en]`) is a Apache UIMA-based medication information extraction system that focuses on assigning the most specific RxNorm RxCUI to medication description. MedXN finds medication and its complete attributes and normalize them to the most specific RxNorm RxCUI using flexible matching, abbreviation expansion, inference, etc. MedXN uses externalized resources (ie, medication dictionary, attribute definitions, and regular expression attribute patterns) to allow a simple customization process for the needs of end users. 
 
+## Prerequisites
+- Java  1.8
+- Apache Maven
+
 ## High-level Algorithm
 Text: `"Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"`
 
@@ -48,7 +52,12 @@ Text: `"Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"`
 
 ## Installation and Execution
 
-To install, download distribution and unzip the package 
+To install, clone this repo and build the jar file using
+
+```
+git clone https://github.com/OHNLP/MedXN.git
+mvn clean install
+```
 
 To execute MedXN for a collection of documents, simply go to MedXN installation home 
 and run `runMedXNCVD.bat` (`runMedXNCVD.sh`) or `runMedXNCPE.bat` (`runMedXNCPE.sh`)
