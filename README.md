@@ -12,9 +12,7 @@ Medication Extraction and Normalization (MedXN, pronounced `[med-eks-en]`) is a 
 - Apache Maven
 - Apache Ant
 
-
-
-## Installation and Execution
+## Installation 
 
 To install MedXN, first clone this repo and enter the project directory as root:
 ```
@@ -44,9 +42,11 @@ To further build a distributable directory, use the ant script:
 ant dist
 ```
 
-Once finished, the `dist` directory can be distributed. 
+Once finished, the `dist` directory contains the required resources, scripts and the `MedXN.jar` to be distributed. 
 
-To execute MedXN for a collection of documents, simply go to MedXN installation home 
+## Run
+
+To execute MedXN for a collection of documents, go to the `dist` directory built 
 and run `runMedXNCVD.bat` (`runMedXNCVD.sh`) or `runMedXNCPE.bat` (`runMedXNCPE.sh`)
  which will test processable analysis engines and collection processing engines.
 
@@ -113,7 +113,7 @@ Text: `"Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"`
 
 ### MedXN descriptors
 
-Under `resources/desc/medxndesc/`:
+Under `dist/resources/desc/medxndesc/`:
 
 - Aggregate TAE: `aggregate_analysis_engine/MedXNAggregateTAE.xml`
 	
