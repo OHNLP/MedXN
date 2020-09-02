@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:textspan="http:///org/ohnlp/typesystem/type/textspan.ecore" xmlns:type2="http:///org/ohnlp/medxn/type.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:structured="http:///org/ohnlp/typesystem/type/structured.ecore" xmlns:type="http:///org/ohnlp/medtagger/type.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:syntax="http:///org/ohnlp/typesystem/type/syntax.ecore" xmlns:refsem="http:///org/ohnlp/typesystem/type/refsem.ecore" xmlns:util="http:///org/ohnlp/typesystem/type/util.ecore" xmlns:textsem="http:///org/ohnlp/typesystem/type/textsem.ecore" xmlns:relation="http:///org/ohnlp/typesystem/type/relation.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <cas:Sofa xmi:id="6" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"/>
+    <tcas:DocumentAnnotation xmi:id="1" sofa="6" begin="0" end="65" language="en"/>
+    <textspan:Sentence xmi:id="13" sofa="6" begin="0" end="65" id="DocBegin:0" segment="288"/>
+    <syntax:Chunk xmi:id="107" sofa="6" begin="0" end="26" chunkType="NP"/>
+    <syntax:Chunk xmi:id="112" sofa="6" begin="27" end="33" chunkType="VP"/>
+    <syntax:Chunk xmi:id="117" sofa="6" begin="34" end="40" chunkType="NP"/>
+    <syntax:Chunk xmi:id="122" sofa="6" begin="41" end="43" chunkType="PP"/>
+    <syntax:Chunk xmi:id="127" sofa="6" begin="44" end="49" chunkType="NP"/>
+    <syntax:Chunk xmi:id="132" sofa="6" begin="50" end="59" chunkType="NP"/>
+    <syntax:Chunk xmi:id="137" sofa="6" begin="60" end="65" chunkType="NP"/>
+    <syntax:WordToken xmi:id="142" sofa="6" begin="0" end="13" tokenNumber="0" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="154" sofa="6" begin="14" end="26" tokenNumber="1" partOfSpeech="NNP" capitalization="2" numPosition="0"/>
+    <syntax:WordToken xmi:id="166" sofa="6" begin="27" end="30" tokenNumber="2" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="186" sofa="6" begin="31" end="33" tokenNumber="4" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="207" sofa="6" begin="36" end="40" tokenNumber="6" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="219" sofa="6" begin="41" end="43" tokenNumber="7" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="231" sofa="6" begin="44" end="49" tokenNumber="8" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="252" sofa="6" begin="54" end="59" tokenNumber="10" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="264" sofa="6" begin="60" end="61" tokenNumber="11" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="276" sofa="6" begin="62" end="65" tokenNumber="12" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:PunctuationToken xmi:id="178" sofa="6" begin="30" end="31" tokenNumber="3" partOfSpeech="-"/>
+    <syntax:NumToken xmi:id="198" sofa="6" begin="34" end="35" tokenNumber="5" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="243" sofa="6" begin="50" end="53" tokenNumber="9" partOfSpeech="CD" numType="0"/>
+    <textspan:Segment xmi:id="288" sofa="6" begin="0" end="65" id="DocBegin" value="DocBegin"/>
+    <type:ConceptMention xmi:id="294" sofa="6" begin="0" end="13" normTarget="Sulfasalazine" semGroup="9524::IN" sentence="13"/>
+    <type2:MedAttr xmi:id="305" sofa="6" begin="36" end="40" tag="form"/>
+    <type2:MedAttr xmi:id="310" sofa="6" begin="27" end="33" tag="strength"/>
+    <type2:MedAttr xmi:id="315" sofa="6" begin="34" end="35" tag="dosage"/>
+    <type2:MedAttr xmi:id="320" sofa="6" begin="50" end="65" tag="frequency"/>
+    <type2:MedAttr xmi:id="325" sofa="6" begin="44" end="49" tag="route"/>
+    <type2:Drug xmi:id="330" sofa="6" begin="0" end="13" name="294" attrs="310 315 305 325 320" normDrug="sulfasalazine&lt;in&gt;500 mg&lt;st&gt;oral tablet&lt;df&gt;" normRxType="SCD" normRxCui="198232" normRxName="Sulfasalazine 500 MG Oral Tablet" normDrug2="9524&lt;in&gt;500 mg&lt;st&gt;317541&lt;df&gt;" normRxType2="SCD" normRxCui2="198232" normRxName2="Sulfasalazine 500 MG Oral Tablet"/>
+    <type2:LookupWindow xmi:id="351" sofa="6" begin="0" end="65"/>
+    <cas:View sofa="6" members="1 13 107 112 117 122 127 132 137 142 154 166 186 207 219 231 252 264 276 178 198 243 288 294 305 310 315 320 325 330 351"/>
+</xmi:XMI>

@@ -52,12 +52,28 @@ Text: `"Sulfasalazine [AZULFIDINE] 500-mg 2 tabs by mouth two times a day"`
 
 ## Installation and Execution
 
-To install, clone this repo and build the jar file using
-
+To install MedXN, first clone this repo and enter the project directory as root:
 ```
 git clone https://github.com/OHNLP/MedXN.git
+cd MedXN
+```
+
+The build.xml contains an Apache Ant script to download MedTagger 1.0.3 automatically, assume you have Ant installed, run:
+```
+ant download_medtagger
+```
+This will download a `MedTagger.jar` to a newly created `dist` directory.
+Then, install MedTagger v1.0.3 locally:
+```
+mvn install:install-file -Dfile=dist/MedTagger.jar -DgroupId=org.ohnlp.medtagger -DartifactId=MedTagger -Dversion=1.0.3 -Dpackaging=jar
+```
+
+To install MedXN, build the jar file using:
+```
 mvn clean install
 ```
+If it runs smoothly, you will see `MedXN-1.0.2-SNAPSHOT.jar` under `target`. 
+
 
 To execute MedXN for a collection of documents, simply go to MedXN installation home 
 and run `runMedXNCVD.bat` (`runMedXNCVD.sh`) or `runMedXNCPE.bat` (`runMedXNCPE.sh`)
