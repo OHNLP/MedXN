@@ -12,6 +12,9 @@ Medication Extraction and Normalization (MedXN, pronounced `[med-eks-en]`) is a 
 - Apache Maven
 - Apache Ant
 
+If you do not have the prerequisites installed, you may need to download the binary files from their official 
+download sites and add the unzipped bin directories to `PATH`. These steps are dependent on your OS.
+
 ## Installation 
 
 To install MedXN, first clone this repo and enter the project directory as root:
@@ -25,17 +28,17 @@ The build.xml contains an Apache Ant script to download MedTagger 1.0.3 automati
 ```
 ant download_medtagger
 ```
-This will download a `MedTagger.jar` to a newly created `dist` directory.
-Then, install MedTagger v1.0.3 locally:
+This will download a `MedTagger.jar` to a newly created `dist` directory. 
+Then, install MedTagger v1.0.3 in your local maven repo (typically `.m2`):
 ```
 mvn install:install-file -Dfile=dist/MedTagger.jar -DgroupId=org.ohnlp.medtagger -DartifactId=MedTagger -Dversion=1.0.3 -Dpackaging=jar
 ```
 
-To install MedXN, build the jar file using:
+To build MedXN, build the jar file using:
 ```
 mvn clean install
 ```
-If it runs smoothly, you will see `MedXN-1.0.2-SNAPSHOT-shaded.jar` under `target`. 
+If it goes smoothly, you will see `MedXN-{$version}-SNAPSHOT-shaded.jar` under `target`. 
 
 To further build a distributable directory, use the ant script:
 
@@ -43,22 +46,24 @@ To further build a distributable directory, use the ant script:
 ant dist
 ```
 
-Once finished, the `dist` directory contains the required resources, scripts and the `MedXN.jar` to be distributed. 
+Once finished, the `dist` directory should contain the required resources, scripts and the `MedXN.jar` to be distributed. 
 
 ## Run
 
 ### Run in batch from CLI
-To process a directory of input file (e.g. `testdata`) and write into a single file (e.g. `out.txt`):
+The `org.ohnlp.medxn.Main` class provides a simple command line interface (CLI) to process a directory of input files (e.g. `testdata`) and write into a single output file (e.g. `out.txt`). 
+
+To run the `org.ohnlp.medxn.Main` class through CLI (under `dist`):
 
 In Windows:
 ```
-java -cp resources;MedXN.jar org.ohnlp.medxn.Main testdata out.txt
+java -cp resources;MedXN.jar org.ohnlp.medxn.Main $YOUR_INPUT_DIR $YOUR_OUTPUT_FILE
 ```
 
 In Unix: 
 
 ```
-java -cp resources:MedXN.jar org.ohnlp.medxn.Main testdata out.txt
+java -cp resources:MedXN.jar org.ohnlp.medxn.Main $YOUR_INPUT_DIR $YOUR_OUTPUT_FILE
 ```
 
 Note: the delimiter of classpath is different in Windows (`;`) from Unix (`:`)
