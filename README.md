@@ -18,6 +18,7 @@ To install MedXN, first clone this repo and enter the project directory as root:
 ```
 git clone https://github.com/OHNLP/MedXN.git
 cd MedXN
+git checkout dist
 ```
 
 The build.xml contains an Apache Ant script to download MedTagger 1.0.3 automatically, assume you have Ant installed, run:
