@@ -46,7 +46,7 @@ Once finished, the `dist` directory contains the required resources, scripts and
 
 ## Run
 
-To execute MedXN for a collection of documents, go to the `dist` directory built 
+To execute MedXN for a collection of documents, make sure you are in the `dist` directory built previously 
 and run `runMedXNCVD.bat` (`runMedXNCVD.sh`) or `runMedXNCPE.bat` (`runMedXNCPE.sh`)
  which will test processable analysis engines and collection processing engines.
 
