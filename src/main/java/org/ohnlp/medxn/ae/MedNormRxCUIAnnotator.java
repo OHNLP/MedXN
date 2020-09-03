@@ -23,9 +23,7 @@
  *******************************************************************************/
 package org.ohnlp.medxn.ae;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -58,7 +56,8 @@ public class MedNormRxCUIAnnotator extends JCasAnnotator_ImplBase {
 			String dictfile = uimaContext.getResourceFilePath("doseDict");
 			BufferedReader fileReader = null;
 			try {
-				fileReader = new BufferedReader(new FileReader(dictfile));
+				fileReader = new BufferedReader(new InputStreamReader(new FileInputStream(dictfile)));
+
 				String line="";
 				while((line=fileReader.readLine()) != null) {
 					if(line.startsWith("//")) continue;

@@ -57,7 +57,8 @@
             <fileset dir="src/main/resources"/>
         </copy>
 
-        <copy file="target/MedXN-1.0.2-SNAPSHOT-shaded.jar" tofile="${dist}/MedXN.jar"/>
+        <xmlproperty file="pom.xml" prefix="pom" />
+        <copy file="target/MedXN-1.0.3-SNAPSHOT-shaded.jar" tofile="${dist}/MedXN.jar"/>
         <zip basedir="${dist}" destfile="MedXN.zip"/>
 
     </target>
