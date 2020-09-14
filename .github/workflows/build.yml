@@ -17,10 +17,10 @@ jobs:
         with:
           java-version: 1.8
       - name: Build with Maven
-        run: mvn clean package --file pom.xml -s settings.xml -P build-executable
+        run: mvn clean package --file pom.xml -s settings.xml
         env:
-          SECRET_ACTOR: ${{ secrets.SECRET_ACTOR }}
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          SECRET_ACTOR: ${{ secrets.OHNLP_REPO_READ_ACTOR }}
+          SECRET_TOKEN: ${{ secrets.OHNLP_REPO_READ_TOKEN }}
       - name: Build with Ant
         run: ant dist -noinput -buildfile build.xml
       - name: Create a Release
