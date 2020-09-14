@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright: (c)  2019  Mayo Foundation for Medical Education and
+  ~ Copyright: (c)  2020  Mayo Foundation for Medical Education and
   ~ Research (MFMER). All rights reserved. MAYO, MAYO CLINIC, and the
   ~ triple-shield Mayo logo are trademarks and service marks of MFMER.
   ~
@@ -23,43 +23,27 @@
 
 <project name="MedXN Build" default="dist" basedir=".">
     <description>
-        Build file for creating MedXN releases, to be run within maven
+        Build file for creating MedXN releases, to be run after maven
     </description>
     <property name="dist" location="dist"/>
-
 
     <target name="init">
         <!-- Create the build directory structure used by compile -->
         <mkdir dir="${dist}"/>
     </target>
 
-    <condition property="isWindows">
-        <os family="windows" />
-    </condition>
-
-    <condition property="isUnix">
-        <os family="unix" />
-    </condition>
-
-<!--Download MedTagger release from Github-->
-    <target name="download_medtagger" description="download MedTagger 1.0.3 and put as dependencies" depends="init">
-        <get src="https://github.com/OHNLP/MedTagger/releases/download/v1.0.3/MedTagger.zip" dest="${dist}/MedTagger.zip"/>
-        <unzip src="${dist}/MedTagger.zip" dest="${dist}/MedTagger"/>
-        <mkdir dir="${dist}/libs"/>
-        <copy file="${dist}/MedTagger/MedTagger.jar" tofile="${dist}/MedTagger.jar"/>
-        <delete file="${dist}/MedTagger.zip"/>
-        <delete dir="${dist}/MedTagger"/>
-    </target>
 
     <target name="dist"
             description="generate the distribution">
-        <copy todir="${dist}/resources">
-            <fileset dir="src/main/resources"/>
-        </copy>
+        <copydir src="src/main/resources" dest="${dist}/resources"/>
+        <copy file="target/MedXN.jar" tofile="${dist}/MedXN.jar"/>
+        <copy file="runMedXNCPE.bat" tofile="${dist}/runMedXNCPE.bat"/>
+        <copy file="runMedXNCPE.sh" tofile="${dist}/runMedXNCPE.sh"/>
+        <copy file="runMedXNCVD.bat" tofile="${dist}/runMedXNCVD.bat"/>
+        <copy file="runMedXNCVD.sh" tofile="${dist}/runMedXNCVD.sh"/>
 
-        <xmlproperty file="pom.xml" prefix="pom" />
-        <copy file="target/MedXN-1.0.3-SNAPSHOT-shaded.jar" tofile="${dist}/MedXN.jar"/>
         <zip basedir="${dist}" destfile="MedXN.zip"/>
+        <delete dir="${dist}"/>
 
     </target>
 </project>
