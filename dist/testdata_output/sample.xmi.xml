@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:textspan="http:///org/ohnlp/typesystem/type/textspan.ecore" xmlns:type2="http:///org/ohnlp/medxn/type.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:structured="http:///org/ohnlp/typesystem/type/structured.ecore" xmlns:type="http:///org/ohnlp/medtagger/type.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:syntax="http:///org/ohnlp/typesystem/type/syntax.ecore" xmlns:refsem="http:///org/ohnlp/typesystem/type/refsem.ecore" xmlns:util="http:///org/ohnlp/typesystem/type/util.ecore" xmlns:textsem="http:///org/ohnlp/typesystem/type/textsem.ecore" xmlns:relation="http:///org/ohnlp/typesystem/type/relation.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <cas:Sofa xmi:id="6" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Dr. Nutritious&#13;&#10;&#13;&#10;Medical Nutrition Therapy for Hyperlipidemia&#13;&#10;&#13;&#10;Referral from: Julie Tester, RD, LD, CNSD&#13;&#10;Phone contact: (555) 555-1212&#13;&#10;Height: 144 cm   Current Weight: 45 kg   Date of current weight: 02-29-2001&#13;&#10;Admit Weight:  53 kg   BMI: 18 kg/m2&#13;&#10;Diet: General&#13;&#10;Daily Calorie needs (kcals): 1500 calories, assessed as HB + 20% for activity.&#13;&#10;Pt has been on a 3-day calorie count and has had an average intake of 1100 calories.&#13;&#10;She was instructed to drink 2-3 cans of liquid supplement to help promote weight gain.&#13;&#10;She agrees with the plan and has my number for further assessment. May want a Resting&#13;&#10;Metabolic Rate as well. She takes an Aspirin 81mg tab by mouth twice a day for a week for knee pain&#13;&#10;HER SOCIAL HISTORY:  She denies any Hyperlipidemia, alcohol, or drug abuse although she occasionally drinks beer."/>
+    <tcas:DocumentAnnotation xmi:id="1" sofa="6" begin="0" end="825" language="en"/>
+    <textspan:Sentence xmi:id="1716" sofa="6" begin="0" end="14" id="DocBegin:0" segment="4009"/>
+    <textspan:Sentence xmi:id="1778" sofa="6" begin="18" end="62" id="DocBegin:1" segment="4009"/>
+    <textspan:Sentence xmi:id="1874" sofa="6" begin="109" end="138" id="3.11.10:2" segment="4015"/>
+    <textspan:Sentence xmi:id="1942" sofa="6" begin="217" end="253" id="6.40.136.170:2" segment="4033"/>
+    <textspan:Sentence xmi:id="2010" sofa="6" begin="270" end="348" id="5.24:2" segment="4051"/>
+    <textspan:Sentence xmi:id="2038" sofa="6" begin="350" end="434" id="5.24:3" segment="4051"/>
+    <textspan:Sentence xmi:id="2066" sofa="6" begin="436" end="522" id="5.24:4" segment="4051"/>
+    <textspan:Sentence xmi:id="2080" sofa="6" begin="524" end="590" id="5.24:5" segment="4051"/>
+    <textspan:Sentence xmi:id="2094" sofa="6" begin="591" end="609" id="5.24:6" segment="4051"/>
+    <textspan:Sentence xmi:id="2114" sofa="6" begin="611" end="634" id="5.24:7" segment="4051"/>
+    <textspan:Sentence xmi:id="2128" sofa="6" begin="635" end="710" id="5.24:8" segment="4051"/>
+    <textspan:Sentence xmi:id="4021" sofa="6" begin="66" end="80" id="3.11.10:0" segment="4015"/>
+    <textspan:Sentence xmi:id="4027" sofa="6" begin="80" end="107" id="3.11.10:1" segment="4015"/>
+    <textspan:Sentence xmi:id="4039" sofa="6" begin="140" end="147" id="6.40.136.170:0" segment="4033"/>
+    <textspan:Sentence xmi:id="4045" sofa="6" begin="147" end="215" id="6.40.136.170:1" segment="4033"/>
+    <textspan:Sentence xmi:id="4057" sofa="6" begin="255" end="260" id="5.24:0" segment="4051"/>
+    <textspan:Sentence xmi:id="4063" sofa="6" begin="260" end="268" id="5.24:1" segment="4051"/>
+    <textspan:Sentence xmi:id="4075" sofa="6" begin="712" end="731" id="5.34.78:0" segment="4069"/>
+    <textspan:Sentence xmi:id="4081" sofa="6" begin="731" end="825" id="5.34.78:1" segment="4069"/>
+    <syntax:Chunk xmi:id="1353" sofa="6" begin="0" end="43" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1358" sofa="6" begin="44" end="47" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1363" sofa="6" begin="48" end="74" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1368" sofa="6" begin="75" end="79" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1373" sofa="6" begin="81" end="122" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1378" sofa="6" begin="124" end="128" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1383" sofa="6" begin="130" end="146" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1388" sofa="6" begin="148" end="154" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1393" sofa="6" begin="157" end="171" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1398" sofa="6" begin="173" end="185" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1403" sofa="6" begin="186" end="188" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1408" sofa="6" begin="189" end="203" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1413" sofa="6" begin="205" end="229" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1418" sofa="6" begin="232" end="237" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1423" sofa="6" begin="240" end="243" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1428" sofa="6" begin="245" end="259" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1433" sofa="6" begin="261" end="283" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1438" sofa="6" begin="284" end="289" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1443" sofa="6" begin="290" end="296" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1448" sofa="6" begin="299" end="312" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1453" sofa="6" begin="312" end="322" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1458" sofa="6" begin="323" end="325" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1463" sofa="6" begin="326" end="328" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1468" sofa="6" begin="331" end="334" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1473" sofa="6" begin="335" end="338" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1478" sofa="6" begin="339" end="347" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1483" sofa="6" begin="350" end="352" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1488" sofa="6" begin="353" end="361" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1493" sofa="6" begin="362" end="364" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1498" sofa="6" begin="365" end="386" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1503" sofa="6" begin="391" end="398" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1508" sofa="6" begin="399" end="416" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1513" sofa="6" begin="417" end="419" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1518" sofa="6" begin="420" end="433" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1523" sofa="6" begin="436" end="439" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1528" sofa="6" begin="440" end="454" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1533" sofa="6" begin="455" end="463" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1538" sofa="6" begin="464" end="472" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1543" sofa="6" begin="473" end="475" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1548" sofa="6" begin="476" end="493" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1553" sofa="6" begin="494" end="501" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1558" sofa="6" begin="502" end="521" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1563" sofa="6" begin="524" end="527" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1568" sofa="6" begin="528" end="534" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1573" sofa="6" begin="535" end="539" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1578" sofa="6" begin="540" end="548" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1583" sofa="6" begin="553" end="556" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1588" sofa="6" begin="557" end="566" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1593" sofa="6" begin="567" end="570" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1598" sofa="6" begin="571" end="589" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1603" sofa="6" begin="591" end="599" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1608" sofa="6" begin="600" end="625" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1613" sofa="6" begin="626" end="633" chunkType="ADVP"/>
+    <syntax:Chunk xmi:id="1618" sofa="6" begin="635" end="638" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1623" sofa="6" begin="639" end="644" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1628" sofa="6" begin="645" end="664" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1633" sofa="6" begin="665" end="667" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1638" sofa="6" begin="668" end="673" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1643" sofa="6" begin="674" end="685" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1648" sofa="6" begin="686" end="689" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1653" sofa="6" begin="690" end="696" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1658" sofa="6" begin="697" end="700" chunkType="PP"/>
+    <syntax:Chunk xmi:id="1663" sofa="6" begin="701" end="730" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1668" sofa="6" begin="733" end="736" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1673" sofa="6" begin="737" end="743" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1678" sofa="6" begin="744" end="786" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1683" sofa="6" begin="787" end="795" chunkType="SBAR"/>
+    <syntax:Chunk xmi:id="1688" sofa="6" begin="796" end="799" chunkType="NP"/>
+    <syntax:Chunk xmi:id="1693" sofa="6" begin="800" end="812" chunkType="ADVP"/>
+    <syntax:Chunk xmi:id="1698" sofa="6" begin="813" end="819" chunkType="VP"/>
+    <syntax:Chunk xmi:id="1703" sofa="6" begin="820" end="824" chunkType="ADJP"/>
+    <syntax:NewlineToken xmi:id="1708" sofa="6" begin="14" end="15" tokenNumber="0"/>
+    <syntax:NewlineToken xmi:id="1728" sofa="6" begin="15" end="16" tokenNumber="1"/>
+    <syntax:NewlineToken xmi:id="1742" sofa="6" begin="16" end="17" tokenNumber="2"/>
+    <syntax:NewlineToken xmi:id="1756" sofa="6" begin="17" end="18" tokenNumber="3"/>
+    <syntax:NewlineToken xmi:id="1770" sofa="6" begin="62" end="63" tokenNumber="4"/>
+    <syntax:NewlineToken xmi:id="1790" sofa="6" begin="63" end="64" tokenNumber="5"/>
+    <syntax:NewlineToken xmi:id="1804" sofa="6" begin="64" end="65" tokenNumber="6"/>
+    <syntax:NewlineToken xmi:id="1818" sofa="6" begin="65" end="66" tokenNumber="7"/>
+    <syntax:NewlineToken xmi:id="1832" sofa="6" begin="107" end="108" tokenNumber="8"/>
+    <syntax:NewlineToken xmi:id="1852" sofa="6" begin="108" end="109" tokenNumber="9"/>
+    <syntax:NewlineToken xmi:id="1866" sofa="6" begin="138" end="139" tokenNumber="10"/>
+    <syntax:NewlineToken xmi:id="1886" sofa="6" begin="139" end="140" tokenNumber="11"/>
+    <syntax:NewlineToken xmi:id="1900" sofa="6" begin="215" end="216" tokenNumber="12"/>
+    <syntax:NewlineToken xmi:id="1920" sofa="6" begin="216" end="217" tokenNumber="13"/>
+    <syntax:NewlineToken xmi:id="1934" sofa="6" begin="253" end="254" tokenNumber="14"/>
+    <syntax:NewlineToken xmi:id="1954" sofa="6" begin="254" end="255" tokenNumber="15"/>
+    <syntax:NewlineToken xmi:id="1968" sofa="6" begin="268" end="269" tokenNumber="16"/>
+    <syntax:NewlineToken xmi:id="1988" sofa="6" begin="269" end="270" tokenNumber="17"/>
+    <syntax:NewlineToken xmi:id="2002" sofa="6" begin="348" end="349" tokenNumber="18"/>
+    <syntax:NewlineToken xmi:id="2016" sofa="6" begin="349" end="350" tokenNumber="19"/>
+    <syntax:NewlineToken xmi:id="2030" sofa="6" begin="434" end="435" tokenNumber="20"/>
+    <syntax:NewlineToken xmi:id="2044" sofa="6" begin="435" end="436" tokenNumber="21"/>
+    <syntax:NewlineToken xmi:id="2058" sofa="6" begin="522" end="523" tokenNumber="22"/>
+    <syntax:NewlineToken xmi:id="2072" sofa="6" begin="523" end="524" tokenNumber="23"/>
+    <syntax:NewlineToken xmi:id="2086" sofa="6" begin="609" end="610" tokenNumber="24"/>
+    <syntax:NewlineToken xmi:id="2106" sofa="6" begin="610" end="611" tokenNumber="25"/>
+    <syntax:NewlineToken xmi:id="2120" sofa="6" begin="710" end="711" tokenNumber="26"/>
+    <syntax:NewlineToken xmi:id="2140" sofa="6" begin="711" end="712" tokenNumber="27"/>
+    <syntax:WordToken xmi:id="2154" sofa="6" begin="0" end="3" tokenNumber="28" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2166" sofa="6" begin="4" end="14" tokenNumber="29" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2178" sofa="6" begin="18" end="25" tokenNumber="30" partOfSpeech="JJ" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2190" sofa="6" begin="26" end="35" tokenNumber="31" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2202" sofa="6" begin="36" end="43" tokenNumber="32" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2214" sofa="6" begin="44" end="47" tokenNumber="33" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2226" sofa="6" begin="48" end="62" tokenNumber="34" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2238" sofa="6" begin="66" end="74" tokenNumber="35" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2250" sofa="6" begin="75" end="79" tokenNumber="36" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2270" sofa="6" begin="81" end="86" tokenNumber="38" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2282" sofa="6" begin="87" end="93" tokenNumber="39" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2302" sofa="6" begin="95" end="97" tokenNumber="41" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="2322" sofa="6" begin="99" end="101" tokenNumber="43" partOfSpeech="NNP" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="2342" sofa="6" begin="103" end="107" tokenNumber="45" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="2354" sofa="6" begin="109" end="114" tokenNumber="46" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2366" sofa="6" begin="115" end="122" tokenNumber="47" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2420" sofa="6" begin="140" end="146" tokenNumber="53" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2449" sofa="6" begin="152" end="154" tokenNumber="56" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2461" sofa="6" begin="157" end="164" tokenNumber="57" partOfSpeech="JJ" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2473" sofa="6" begin="165" end="171" tokenNumber="58" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2502" sofa="6" begin="176" end="178" tokenNumber="61" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2514" sofa="6" begin="181" end="185" tokenNumber="62" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2526" sofa="6" begin="186" end="188" tokenNumber="63" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2538" sofa="6" begin="189" end="196" tokenNumber="64" partOfSpeech="JJ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2550" sofa="6" begin="197" end="203" tokenNumber="65" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2579" sofa="6" begin="217" end="222" tokenNumber="68" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2591" sofa="6" begin="223" end="229" tokenNumber="69" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2620" sofa="6" begin="235" end="237" tokenNumber="72" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2632" sofa="6" begin="240" end="243" tokenNumber="73" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="2661" sofa="6" begin="248" end="250" tokenNumber="76" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2681" sofa="6" begin="251" end="253" tokenNumber="78" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2693" sofa="6" begin="255" end="259" tokenNumber="79" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2713" sofa="6" begin="261" end="268" tokenNumber="81" partOfSpeech="JJ" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2725" sofa="6" begin="270" end="275" tokenNumber="82" partOfSpeech="JJ" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2737" sofa="6" begin="276" end="283" tokenNumber="83" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2749" sofa="6" begin="284" end="289" tokenNumber="84" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2761" sofa="6" begin="290" end="296" tokenNumber="85" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2798" sofa="6" begin="304" end="312" tokenNumber="89" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2818" sofa="6" begin="314" end="322" tokenNumber="91" partOfSpeech="VBN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2830" sofa="6" begin="323" end="325" tokenNumber="92" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2842" sofa="6" begin="326" end="328" tokenNumber="93" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="2879" sofa="6" begin="335" end="338" tokenNumber="97" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2891" sofa="6" begin="339" end="347" tokenNumber="98" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2911" sofa="6" begin="350" end="352" tokenNumber="100" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="2923" sofa="6" begin="353" end="356" tokenNumber="101" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2935" sofa="6" begin="357" end="361" tokenNumber="102" partOfSpeech="VBN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2947" sofa="6" begin="362" end="364" tokenNumber="103" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2959" sofa="6" begin="365" end="366" tokenNumber="104" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2971" sofa="6" begin="367" end="368" tokenNumber="105" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="2991" sofa="6" begin="369" end="372" tokenNumber="107" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3003" sofa="6" begin="373" end="380" tokenNumber="108" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3015" sofa="6" begin="381" end="386" tokenNumber="109" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3027" sofa="6" begin="387" end="390" tokenNumber="110" partOfSpeech="CC" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3039" sofa="6" begin="391" end="394" tokenNumber="111" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3051" sofa="6" begin="395" end="398" tokenNumber="112" partOfSpeech="VBN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3063" sofa="6" begin="399" end="401" tokenNumber="113" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3075" sofa="6" begin="402" end="409" tokenNumber="114" partOfSpeech="JJ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3087" sofa="6" begin="410" end="416" tokenNumber="115" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3099" sofa="6" begin="417" end="419" tokenNumber="116" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3120" sofa="6" begin="425" end="433" tokenNumber="118" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3140" sofa="6" begin="436" end="439" tokenNumber="120" partOfSpeech="PRP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3152" sofa="6" begin="440" end="443" tokenNumber="121" partOfSpeech="VBD" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3164" sofa="6" begin="444" end="454" tokenNumber="122" partOfSpeech="VBN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3176" sofa="6" begin="455" end="457" tokenNumber="123" partOfSpeech="TO" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3188" sofa="6" begin="458" end="463" tokenNumber="124" partOfSpeech="VB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3209" sofa="6" begin="468" end="472" tokenNumber="126" partOfSpeech="NNS" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3221" sofa="6" begin="473" end="475" tokenNumber="127" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3233" sofa="6" begin="476" end="482" tokenNumber="128" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3245" sofa="6" begin="483" end="493" tokenNumber="129" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3257" sofa="6" begin="494" end="496" tokenNumber="130" partOfSpeech="TO" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3269" sofa="6" begin="497" end="501" tokenNumber="131" partOfSpeech="VB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3281" sofa="6" begin="502" end="509" tokenNumber="132" partOfSpeech="JJ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3293" sofa="6" begin="510" end="516" tokenNumber="133" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3305" sofa="6" begin="517" end="521" tokenNumber="134" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3325" sofa="6" begin="524" end="527" tokenNumber="136" partOfSpeech="PRP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3337" sofa="6" begin="528" end="534" tokenNumber="137" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3349" sofa="6" begin="535" end="539" tokenNumber="138" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3361" sofa="6" begin="540" end="543" tokenNumber="139" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3373" sofa="6" begin="544" end="548" tokenNumber="140" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3385" sofa="6" begin="549" end="552" tokenNumber="141" partOfSpeech="CC" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3397" sofa="6" begin="553" end="556" tokenNumber="142" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3409" sofa="6" begin="557" end="559" tokenNumber="143" partOfSpeech="PRP$" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3421" sofa="6" begin="560" end="566" tokenNumber="144" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3433" sofa="6" begin="567" end="570" tokenNumber="145" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3445" sofa="6" begin="571" end="578" tokenNumber="146" partOfSpeech="JJ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3457" sofa="6" begin="579" end="589" tokenNumber="147" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3477" sofa="6" begin="591" end="594" tokenNumber="149" partOfSpeech="MD" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3489" sofa="6" begin="595" end="599" tokenNumber="150" partOfSpeech="VB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3501" sofa="6" begin="600" end="601" tokenNumber="151" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3513" sofa="6" begin="602" end="609" tokenNumber="152" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3525" sofa="6" begin="611" end="620" tokenNumber="153" partOfSpeech="JJ" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3537" sofa="6" begin="621" end="625" tokenNumber="154" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3549" sofa="6" begin="626" end="628" tokenNumber="155" partOfSpeech="RB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3561" sofa="6" begin="629" end="633" tokenNumber="156" partOfSpeech="RB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3581" sofa="6" begin="635" end="638" tokenNumber="158" partOfSpeech="PRP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3593" sofa="6" begin="639" end="644" tokenNumber="159" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3605" sofa="6" begin="645" end="647" tokenNumber="160" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3617" sofa="6" begin="648" end="655" tokenNumber="161" partOfSpeech="NNP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3629" sofa="6" begin="656" end="660" tokenNumber="162" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3641" sofa="6" begin="661" end="664" tokenNumber="163" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3653" sofa="6" begin="665" end="667" tokenNumber="164" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3665" sofa="6" begin="668" end="673" tokenNumber="165" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3677" sofa="6" begin="674" end="679" tokenNumber="166" partOfSpeech="RB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3689" sofa="6" begin="680" end="681" tokenNumber="167" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3701" sofa="6" begin="682" end="685" tokenNumber="168" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3713" sofa="6" begin="686" end="689" tokenNumber="169" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3725" sofa="6" begin="690" end="691" tokenNumber="170" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3737" sofa="6" begin="692" end="696" tokenNumber="171" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3749" sofa="6" begin="697" end="700" tokenNumber="172" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3761" sofa="6" begin="701" end="705" tokenNumber="173" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3773" sofa="6" begin="706" end="710" tokenNumber="174" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3785" sofa="6" begin="712" end="715" tokenNumber="175" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="3797" sofa="6" begin="716" end="722" tokenNumber="176" partOfSpeech="JJ" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="3809" sofa="6" begin="723" end="730" tokenNumber="177" partOfSpeech="NN" capitalization="4" numPosition="0"/>
+    <syntax:WordToken xmi:id="3829" sofa="6" begin="733" end="736" tokenNumber="179" partOfSpeech="PRP" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3841" sofa="6" begin="737" end="743" tokenNumber="180" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3853" sofa="6" begin="744" end="747" tokenNumber="181" partOfSpeech="DT" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3865" sofa="6" begin="748" end="762" tokenNumber="182" partOfSpeech="NN" capitalization="3" numPosition="0"/>
+    <syntax:WordToken xmi:id="3885" sofa="6" begin="764" end="771" tokenNumber="184" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3905" sofa="6" begin="773" end="775" tokenNumber="186" partOfSpeech="CC" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3917" sofa="6" begin="776" end="780" tokenNumber="187" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3929" sofa="6" begin="781" end="786" tokenNumber="188" partOfSpeech="NN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3941" sofa="6" begin="787" end="795" tokenNumber="189" partOfSpeech="IN" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3953" sofa="6" begin="796" end="799" tokenNumber="190" partOfSpeech="PRP" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3965" sofa="6" begin="800" end="812" tokenNumber="191" partOfSpeech="RB" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3977" sofa="6" begin="813" end="819" tokenNumber="192" partOfSpeech="VBZ" capitalization="1" numPosition="0"/>
+    <syntax:WordToken xmi:id="3989" sofa="6" begin="820" end="824" tokenNumber="193" partOfSpeech="JJ" capitalization="1" numPosition="0"/>
+    <syntax:PunctuationToken xmi:id="2262" sofa="6" begin="79" end="80" tokenNumber="37" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2294" sofa="6" begin="93" end="94" tokenNumber="40" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="2314" sofa="6" begin="97" end="98" tokenNumber="42" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="2334" sofa="6" begin="101" end="102" tokenNumber="44" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="2378" sofa="6" begin="122" end="123" tokenNumber="48" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2386" sofa="6" begin="124" end="125" tokenNumber="49" partOfSpeech="-LRB-"/>
+    <syntax:PunctuationToken xmi:id="2403" sofa="6" begin="128" end="129" tokenNumber="51" partOfSpeech="-RRB-"/>
+    <syntax:PunctuationToken xmi:id="2432" sofa="6" begin="146" end="147" tokenNumber="54" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2485" sofa="6" begin="171" end="172" tokenNumber="59" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2562" sofa="6" begin="203" end="204" tokenNumber="66" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2603" sofa="6" begin="229" end="230" tokenNumber="70" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2644" sofa="6" begin="243" end="244" tokenNumber="74" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2673" sofa="6" begin="250" end="251" tokenNumber="77" partOfSpeech="/"/>
+    <syntax:PunctuationToken xmi:id="2705" sofa="6" begin="259" end="260" tokenNumber="80" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2773" sofa="6" begin="296" end="297" tokenNumber="86" partOfSpeech="-RRB-"/>
+    <syntax:PunctuationToken xmi:id="2781" sofa="6" begin="297" end="298" tokenNumber="87" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="2810" sofa="6" begin="312" end="313" tokenNumber="90" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="2854" sofa="6" begin="329" end="330" tokenNumber="94" partOfSpeech="SYM"/>
+    <syntax:PunctuationToken xmi:id="2871" sofa="6" begin="333" end="334" tokenNumber="96" partOfSpeech="NN"/>
+    <syntax:PunctuationToken xmi:id="2903" sofa="6" begin="347" end="348" tokenNumber="99" partOfSpeech="."/>
+    <syntax:PunctuationToken xmi:id="2983" sofa="6" begin="368" end="369" tokenNumber="106" partOfSpeech="-"/>
+    <syntax:PunctuationToken xmi:id="3132" sofa="6" begin="433" end="434" tokenNumber="119" partOfSpeech="."/>
+    <syntax:PunctuationToken xmi:id="3317" sofa="6" begin="521" end="522" tokenNumber="135" partOfSpeech="."/>
+    <syntax:PunctuationToken xmi:id="3469" sofa="6" begin="589" end="590" tokenNumber="148" partOfSpeech="."/>
+    <syntax:PunctuationToken xmi:id="3573" sofa="6" begin="633" end="634" tokenNumber="157" partOfSpeech="."/>
+    <syntax:PunctuationToken xmi:id="3821" sofa="6" begin="730" end="731" tokenNumber="178" partOfSpeech=":"/>
+    <syntax:PunctuationToken xmi:id="3877" sofa="6" begin="762" end="763" tokenNumber="183" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="3897" sofa="6" begin="771" end="772" tokenNumber="185" partOfSpeech=","/>
+    <syntax:PunctuationToken xmi:id="4001" sofa="6" begin="824" end="825" tokenNumber="194" partOfSpeech="."/>
+    <syntax:NumToken xmi:id="2394" sofa="6" begin="125" end="128" tokenNumber="50" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2411" sofa="6" begin="130" end="138" tokenNumber="52" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2440" sofa="6" begin="148" end="151" tokenNumber="55" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2493" sofa="6" begin="173" end="175" tokenNumber="60" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2570" sofa="6" begin="205" end="215" tokenNumber="67" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2611" sofa="6" begin="232" end="234" tokenNumber="71" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2652" sofa="6" begin="245" end="247" tokenNumber="75" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2789" sofa="6" begin="299" end="303" tokenNumber="88" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="2862" sofa="6" begin="331" end="333" tokenNumber="95" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="3111" sofa="6" begin="420" end="424" tokenNumber="117" partOfSpeech="CD" numType="0"/>
+    <syntax:NumToken xmi:id="3200" sofa="6" begin="464" end="467" tokenNumber="125" partOfSpeech="CD" numType="0"/>
+    <textspan:Segment xmi:id="4009" sofa="6" begin="0" end="62" id="DocBegin" value="DocBegin"/>
+    <textspan:Segment xmi:id="4015" sofa="6" begin="66" end="138" id="3.11.10" value="referral"/>
+    <textspan:Segment xmi:id="4033" sofa="6" begin="140" end="253" id="6.40.136.170" value="height"/>
+    <textspan:Segment xmi:id="4051" sofa="6" begin="255" end="710" id="5.24" value="diet"/>
+    <textspan:Segment xmi:id="4069" sofa="6" begin="712" end="825" id="5.34.78" value="personal_and_social_history"/>
+    <type:ConceptMention xmi:id="4087" sofa="6" begin="181" end="185" normTarget="date allergenic extract" semGroup="899742::IN" sentence="4045"/>
+    <type:ConceptMention xmi:id="4098" sofa="6" begin="648" end="655" normTarget="Aspirin" semGroup="1191::IN" sentence="2128"/>
+    <type:ConceptMention xmi:id="4109" sofa="6" begin="674" end="685" normTarget="Twice-A-Day brand of oxymetazoline" semGroup="220558::BN" sentence="2128"/>
+    <type:ConceptMention xmi:id="4120" sofa="6" begin="764" end="771" normTarget="Ethanol" semGroup="448::IN" sentence="4081"/>
+    <type:ConceptMention xmi:id="4131" sofa="6" begin="764" end="771" normTarget="Alcohols" semGroup="455::IN" sentence="4081"/>
+    <type2:MedAttr xmi:id="4142" sofa="6" begin="690" end="696" tag="duration"/>
+    <type2:MedAttr xmi:id="4147" sofa="6" begin="476" end="482" tag="form"/>
+    <type2:MedAttr xmi:id="4152" sofa="6" begin="483" end="493" tag="form"/>
+    <type2:MedAttr xmi:id="4157" sofa="6" begin="661" end="664" tag="form"/>
+    <type2:MedAttr xmi:id="4162" sofa="6" begin="656" end="660" tag="strength"/>
+    <type2:MedAttr xmi:id="4167" sofa="6" begin="331" end="334" tag="strength"/>
+    <type2:MedAttr xmi:id="4172" sofa="6" begin="674" end="685" tag="frequency"/>
+    <type2:MedAttr xmi:id="4177" sofa="6" begin="668" end="673" tag="route"/>
+    <type2:Drug xmi:id="4182" sofa="6" begin="648" end="655" name="4098" attrs="4162 4157 4177 4172 4142" normDrug="aspirin&lt;in&gt;81 mg&lt;st&gt;oral tablet&lt;df&gt;" normRxType="SCD" normRxCui="243670" normRxName="Aspirin 81 MG Oral Tablet" normDrug2="1191&lt;in&gt;81 mg&lt;st&gt;317541&lt;df&gt;" normRxType2="SCD" normRxCui2="243670" normRxName2="Aspirin 81 MG Oral Tablet"/>
+    <type2:LookupWindow xmi:id="4203" sofa="6" begin="648" end="825"/>
+    <cas:View sofa="6" members="1 1716 1778 1874 1942 2010 2038 2066 2080 2094 2114 2128 4021 4027 4039 4045 4057 4063 4075 4081 1353 1358 1363 1368 1373 1378 1383 1388 1393 1398 1403 1408 1413 1418 1423 1428 1433 1438 1443 1448 1453 1458 1463 1468 1473 1478 1483 1488 1493 1498 1503 1508 1513 1518 1523 1528 1533 1538 1543 1548 1553 1558 1563 1568 1573 1578 1583 1588 1593 1598 1603 1608 1613 1618 1623 1628 1633 1638 1643 1648 1653 1658 1663 1668 1673 1678 1683 1688 1693 1698 1703 1708 1728 1742 1756 1770 1790 1804 1818 1832 1852 1866 1886 1900 1920 1934 1954 1968 1988 2002 2016 2030 2044 2058 2072 2086 2106 2120 2140 2154 2166 2178 2190 2202 2214 2226 2238 2250 2270 2282 2302 2322 2342 2354 2366 2420 2449 2461 2473 2502 2514 2526 2538 2550 2579 2591 2620 2632 2661 2681 2693 2713 2725 2737 2749 2761 2798 2818 2830 2842 2879 2891 2911 2923 2935 2947 2959 2971 2991 3003 3015 3027 3039 3051 3063 3075 3087 3099 3120 3140 3152 3164 3176 3188 3209 3221 3233 3245 3257 3269 3281 3293 3305 3325 3337 3349 3361 3373 3385 3397 3409 3421 3433 3445 3457 3477 3489 3501 3513 3525 3537 3549 3561 3581 3593 3605 3617 3629 3641 3653 3665 3677 3689 3701 3713 3725 3737 3749 3761 3773 3785 3797 3809 3829 3841 3853 3865 3885 3905 3917 3929 3941 3953 3965 3977 3989 2262 2294 2314 2334 2378 2386 2403 2432 2485 2562 2603 2644 2673 2705 2773 2781 2810 2854 2871 2903 2983 3132 3317 3469 3573 3821 3877 3897 4001 2394 2411 2440 2493 2570 2611 2652 2789 2862 3111 3200 4009 4015 4033 4051 4069 4087 4098 4109 4120 4131 4142 4147 4152 4157 4162 4167 4172 4177 4182 4203"/>
+</xmi:XMI>

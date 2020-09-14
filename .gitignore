@@ -1,0 +1,5 @@
+target
+dist/resources
+dist/out.txt
+**.jar
+*.zip
