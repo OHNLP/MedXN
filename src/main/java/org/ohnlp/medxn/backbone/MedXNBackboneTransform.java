@@ -70,7 +70,7 @@ public class MedXNBackboneTransform extends Transform {
         @Setup
         public void init() throws IOException, InvalidXMLException, ResourceInitializationException {
             AnalysisEngineDescription aaeDesc = createEngineDescription(
-                    "desc.medtaggeriedesc.aggregate_analysis_engine.MedTaggerIEAggregateTAE");
+                    "desc.medxndesc.aggregate_analysis_engine.MedXNAggregateTAE");
             this.resMgr = ResourceManagerFactory.newResourceManager();
             this.aae = UIMAFramework.produceAnalysisEngine(aaeDesc, resMgr, null);
             this.cas = CasCreationUtils.createCas(Collections.singletonList(aae.getMetaData()),

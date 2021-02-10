@@ -24,7 +24,7 @@ An example backbone component configuration follows:
 }
 ```
 
-### MedXNOutputToOHDSIFormatTransform
+#### MedXNOutputToOHDSIFormatTransform
 Transforms the results from MedXNBackboneTransform into a format compliant with OHDSI's NOTE_NLP table. Note that it is 
 assumed that the note_id will also be supplied as part of the input rows
 
