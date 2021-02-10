@@ -8,5 +8,10 @@
             <username>${env.SECRET_ACTOR}</username>
             <password>${env.SECRET_TOKEN}</password>
         </server>
+        <server>
+            <id>backbone-maven</id>
+            <username>${env.SECRET_ACTOR}</username>
+            <password>${env.SECRET_TOKEN}</password>
+        </server>
     </servers>
 </settings>

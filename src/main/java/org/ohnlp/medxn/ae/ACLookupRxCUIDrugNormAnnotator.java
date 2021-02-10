@@ -62,9 +62,7 @@ public class ACLookupRxCUIDrugNormAnnotator extends JCasAnnotator_ImplBase {
 		logger.setLevel(Level.DEBUG);
 				
 		try {
-			
-			String dict = aContext.getResourceFilePath("RxCUI");
-			btac = new AhoCorasickDict(dict);		
+			btac = new AhoCorasickDict( aContext.getResourceAsStream("RxCUI"));
 		} catch (ResourceAccessException e) {
 			e.printStackTrace();
 		} 		

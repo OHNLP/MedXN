@@ -59,14 +59,12 @@ public class ACLookupDrugNormAnnotator extends JCasAnnotator_ImplBase {
 			throws ResourceInitializationException {
 		super.initialize(aContext);
 		logger.setLevel(Level.DEBUG);
-				
+
 		try {
-			
-			String dict = aContext.getResourceFilePath("RxNorm_Name");
-			btac = new AhoCorasickDict(dict);		
+			btac = new AhoCorasickDict(aContext.getResourceAsStream("RxNorm_Name"));
 		} catch (ResourceAccessException e) {
 			e.printStackTrace();
-		} 		
+		}
 	}
 
 	@Override

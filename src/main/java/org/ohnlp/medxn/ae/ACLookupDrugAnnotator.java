@@ -66,12 +66,10 @@ public class ACLookupDrugAnnotator extends JCasAnnotator_ImplBase {
 
 
 		try {
-
-			String dict = aContext.getResourceFilePath("RxNorm_BNIN");
-			btac = new AhoCorasickDict(dict);	
+			btac = new AhoCorasickDict(aContext.getResourceAsStream("RxNorm_BNIN"));
 		} catch (ResourceAccessException e) {
 			e.printStackTrace();
-		} 		
+		}
 	}
 
 	@Override

@@ -53,10 +53,9 @@ public class MedNormRxCUIAnnotator extends JCasAnnotator_ImplBase {
 		doseRxCUI = new HashMap<String, String>();
 		
 		try {
-			String dictfile = uimaContext.getResourceFilePath("doseDict");
 			BufferedReader fileReader = null;
 			try {
-				fileReader = new BufferedReader(new InputStreamReader(new FileInputStream(dictfile)));
+				fileReader = new BufferedReader(new InputStreamReader(uimaContext.getResourceAsStream("doseDict")));
 
 				String line="";
 				while((line=fileReader.readLine()) != null) {
