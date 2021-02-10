@@ -16,23 +16,36 @@ If you do not have the prerequisites installed, you may need to download the bin
 download sites and add the unzipped bin directories to `PATH`. These steps are dependent on your OS.
 
 ## Installation 
+MedXN is runnable out-of-the-box: simply download MedXN.zip corresponding to the
+ [latest release](https://github.com/OHNLP/MedXN/releases/), extract, and follow the instructions for running 
 
-To install MedXN, first clone this repo and enter the project directory as root:
+## Compiling From Source Code
+To make changes and re-compile medxn from source code, first clone this repo and enter the project directory as root:
 ```
 git clone https://github.com/OHNLP/MedXN.git
 cd MedXN
 git checkout dist
 ```
 
-The build.xml contains an Apache Ant script to download MedTagger 1.0.3 automatically, assume you have Ant installed, run:
+To download MedTagger and Backbone dependencies from github packages, you will have to add the following to your
+maven settings.xml (typically located in ~/.m2/settings.xml)
+
+```xml
+ <servers>
+        <server>
+            <id>medtagger</id>
+            <username>your_github_username</username>
+            <password>your_github_access_token</password>
+        </server>
+        <server>
+            <id>backbone-maven</id>
+            <username>your_github_username</username>
+            <password>your_github_access_token</password>
+        </server>
+    </servers>
 ```
-ant download_medtagger
-```
-This will download a `MedTagger.jar` to a newly created `dist` directory. 
-Then, install MedTagger v1.0.3 in your local maven repo (typically `.m2`):
-```
-mvn install:install-file -Dfile=dist/MedTagger.jar -DgroupId=org.ohnlp.medtagger -DartifactId=MedTagger -Dversion=1.0.3 -Dpackaging=jar
-```
+where your github access token corresponds to an appropriate 
+[github token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) with the read:packages permissions
 
 To build MedXN, build the jar file using:
 ```
