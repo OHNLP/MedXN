@@ -185,3 +185,5 @@ Under `dist/resources/medxnresources`
 
 `regExPatterns.txt`: contains medication attribute patterns written in Java regular expression (includes usage descriptions).
 
+
+

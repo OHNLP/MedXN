@@ -10,7 +10,6 @@ import org.apache.uima.UIMAFramework;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
-import org.apache.uima.analysis_engine.metadata.AnalysisEngineMetaData;
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
 import org.apache.uima.cas.FeatureStructure;
@@ -21,7 +20,6 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.resource.ResourceManager;
-import org.apache.uima.resource.metadata.ConfigurationParameterSettings;
 import org.apache.uima.util.CasCreationUtils;
 import org.apache.uima.util.InvalidXMLException;
 import org.ohnlp.backbone.api.Transform;
@@ -32,15 +30,16 @@ import org.ohnlp.typesystem.type.textspan.Segment;
 import org.ohnlp.typesystem.type.textspan.Sentence;
 
 import java.io.IOException;
-import java.net.URI;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystemAlreadyExistsException;
-import java.nio.file.FileSystems;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
 
+/**
+ * Given an input row representing a document, duplicates row contents and adds a nlp_output_json column for each
+ * drug mention in the input text.
+ */
 public class MedXNBackboneTransform extends Transform {
     @Override
     public void initFromConfig(JsonNode jsonNode) throws ComponentInitializationException {
@@ -53,6 +52,8 @@ public class MedXNBackboneTransform extends Transform {
     }
 
     private static class MedXNPipelineFunction extends DoFn<Row, Row> {
+
+        private static ThreadLocal<SimpleDateFormat> sdf = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
 
         private final String textField;
 
@@ -132,6 +133,14 @@ public class MedXNBackboneTransform extends Transform {
                     .stream()
                     .map(Annotation::getCoveredText)
                     .collect(Collectors.joining(" ")));
+            ret.setMatchSection(sectionIdx.get(drug).stream().map((s) -> {
+                try {
+                    return Integer.parseInt(s.getId());
+                } catch (Throwable var2) {
+                    return -1;
+                }
+            }).findFirst().orElse(0));
+            ret.setNlpDate(sdf.get().format(new Date()));
             return ret;
         }
 

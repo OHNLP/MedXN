@@ -5,6 +5,8 @@ public class MedXNDrugBean {
     private String matchedText;
     private int matchBegin;
     private int matchEnd;
+    private int matchSection;
+    private String nlpDate;
     private String matchSentence;
     private String frequency;
     private String duration;
@@ -99,5 +101,21 @@ public class MedXNDrugBean {
 
     public void setMatchSentence(String matchSentence) {
         this.matchSentence = matchSentence;
+    }
+
+    public int getMatchSection() {
+        return matchSection;
+    }
+
+    public void setMatchSection(int matchSection) {
+        this.matchSection = matchSection;
+    }
+
+    public String getNlpDate() {
+        return nlpDate;
+    }
+
+    public void setNlpDate(String nlpDate) {
+        this.nlpDate = nlpDate;
     }
 }
