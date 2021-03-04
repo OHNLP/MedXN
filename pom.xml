@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.ohnlp.medxn</groupId>
-    <artifactId>MedXN</artifactId>
-    <version>1.0.3</version>
+    <artifactId>medxn</artifactId>
+    <version>1.0.4</version>
     <description>The MedXN medication Information extraction pipeline</description>
 
     <repositories>
@@ -14,6 +14,11 @@
             <id>medtagger</id>
             <name>GitHub OHNLP MedTagger Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/OHNLP/MedTagger</url>
+        </repository>
+        <repository>
+            <id>backbone-maven</id>
+            <name>OHNLP Backbone Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/OHNLP/Backbone</url>
         </repository>
     </repositories>
 
@@ -74,7 +79,13 @@
         <dependency>
             <groupId>org.ohnlp.medtagger</groupId>
             <artifactId>MedTagger</artifactId>
-            <version>1.0.7</version>
+            <version>1.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ohnlp.backbone</groupId>
+            <artifactId>API</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
