@@ -71,5 +71,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.beam:beam-runners-core-construction-java:2.22.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: io.github.classgraph:classgraph:4.8.65" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.beam:beam-sdks-java-fn-execution:2.22.0" level="project" />
+    <orderEntry type="library" name="Maven: org.ohnlp.medtagger:MedTagger:1.0.3" level="project" />
   </component>
 </module>
