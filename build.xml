@@ -36,7 +36,7 @@
     <target name="dist"
             description="generate the distribution">
         <copydir src="src/main/resources" dest="${dist}/resources"/>
-        <copy file="target/MedXN.jar" tofile="${dist}/MedXN.jar"/>
+        <copy file="target/medxn.jar" tofile="${dist}/MedXN.jar"/>
         <copy file="runMedXNCPE.bat" tofile="${dist}/runMedXNCPE.bat"/>
         <copy file="runMedXNCPE.sh" tofile="${dist}/runMedXNCPE.sh"/>
         <copy file="runMedXNCVD.bat" tofile="${dist}/runMedXNCVD.bat"/>
