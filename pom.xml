@@ -27,7 +27,9 @@
         <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -77,14 +79,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.ohnlp.medtagger.medtagger</groupId>
+            <groupId>org.ohnlp.medtagger</groupId>
             <artifactId>medtagger</artifactId>
-            <version>1.0.13</version>
+            <version>1.0.21</version>
         </dependency>
         <dependency>
-            <groupId>org.ohnlp.backbone.api</groupId>
+            <groupId>org.ohnlp.backbone</groupId>
             <artifactId>api</artifactId>
-            <version>1.0.4</version>
+            <version>1.0.6</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
