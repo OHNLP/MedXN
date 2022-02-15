@@ -25,6 +25,6 @@ jobs:
         SECRET_ACTOR: ${{ secrets.OHNLP_REPO_READ_ACTOR }}
         SECRET_TOKEN: ${{ secrets.OHNLP_REPO_READ_TOKEN }}
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/githubdeploysettings/settings.xml 
+      run: mvn deploy -s $GITHUB_WORKSPACE/githubdeploysettings/settings.xml -P build-deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
