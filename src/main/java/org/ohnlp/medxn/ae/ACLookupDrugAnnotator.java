@@ -28,13 +28,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Vector;
 
+import org.apache.uima.UIMAFramework;
+import org.apache.uima.util.Logger;
 import org.ohnlp.typesystem.type.syntax.BaseToken;
 import org.ohnlp.typesystem.type.syntax.NumToken;
 import org.ohnlp.typesystem.type.syntax.WordToken;
 import org.ohnlp.typesystem.type.textspan.Segment;
 import org.ohnlp.typesystem.type.textspan.Sentence;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
@@ -52,8 +52,7 @@ import org.ohnlp.medtagger.type.ConceptMention;
 */
 public class ACLookupDrugAnnotator extends JCasAnnotator_ImplBase {
 
-	// LOG4J logger based on class name
-	private Logger logger = Logger.getLogger(getClass().getName());
+	private Logger logger = UIMAFramework.getLogger(getClass());
 
 	//data structure that stores the TRIE
 	AhoCorasickDict btac;
@@ -62,7 +61,6 @@ public class ACLookupDrugAnnotator extends JCasAnnotator_ImplBase {
 	public void initialize(UimaContext aContext)
 	throws ResourceInitializationException {
 		super.initialize(aContext);
-		logger.setLevel(Level.DEBUG);
 
 
 		try {
