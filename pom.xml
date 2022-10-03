@@ -6,7 +6,7 @@
 
     <groupId>org.ohnlp.medxn</groupId>
     <artifactId>medxn</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <description>The MedXN medication Information extraction pipeline</description>
 
     <repositories>
@@ -82,7 +82,6 @@
                                     <goal>shade</goal>
                                 </goals>
                                 <configuration>
-                                    <shadedArtifactAttached>true</shadedArtifactAttached>
                                     <transformers>
                                         <transformer implementation=
                                                              "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
@@ -105,7 +104,7 @@
         <dependency>
             <groupId>org.ohnlp.medtagger</groupId>
             <artifactId>medtagger</artifactId>
-            <version>1.0.21</version>
+            <version>1.0.46</version>
         </dependency>
         <dependency>
             <groupId>org.ohnlp.backbone</groupId>
