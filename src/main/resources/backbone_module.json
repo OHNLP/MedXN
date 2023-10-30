@@ -1,0 +1,9 @@
+{
+  "name": "MedXN Information Extraction NLP Pipeline",
+  "desc": "Runs Symbolic Information Extraction on Drug Mentions and Associated Metadata",
+  "repo": "https://github.com/OHNLP/MedXN",
+  "packages": [
+    "org.ohnlp.medxn.backbone"
+  ],
+  "version": "${version}"
+}
