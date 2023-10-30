@@ -10,6 +10,7 @@ import org.apache.beam.sdk.values.PCollection;
 import org.apache.beam.sdk.values.Row;
 import org.joda.time.Instant;
 import org.ohnlp.backbone.api.Transform;
+import org.ohnlp.backbone.api.components.OneToOneTransform;
 import org.ohnlp.backbone.api.exceptions.ComponentInitializationException;
 
 import java.io.BufferedReader;
@@ -31,12 +32,24 @@ import java.util.stream.Collectors;
  * <b>Important:</b> Requires that the OHDSI vocabulary load query first be run and loaded into backbone resources folder
  * as ohdsi_rxnorm_map.csv. Please refer to documentation for further details
  */
-public class MedXNOutputToOHDSIFormatTransform extends Transform {
+public class MedXNOutputToOHDSIFormatTransform extends OneToOneTransform {
     private static ThreadLocal<SimpleDateFormat> sdf = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
+    private Schema schema;
 
 
     @Override
-    public void initFromConfig(JsonNode config) throws ComponentInitializationException {
+    public Schema calculateOutputSchema(Schema input) {
+        // First transform row schemas
+        List<Schema.Field> fields = new LinkedList<>(input.getFields());
+        fields.add(Schema.Field.of("section_concept_id", Schema.FieldType.INT32));
+        fields.add(Schema.Field.of("lexical_variant", Schema.FieldType.STRING));
+        fields.add(Schema.Field.of("snippet", Schema.FieldType.STRING));
+        fields.add(Schema.Field.of("note_nlp_concept_id", Schema.FieldType.INT32));
+        fields.add(Schema.Field.of("note_nlp_source_concept_id", Schema.FieldType.INT32));
+        fields.add(Schema.Field.of("nlp_datetime", Schema.FieldType.DATETIME));
+        fields.add(Schema.Field.of("term_modifiers", Schema.FieldType.STRING));
+        this.schema = Schema.of(fields.toArray(new Schema.Field[0]));
+        return this.schema;
     }
 
     @Override
@@ -65,16 +78,7 @@ public class MedXNOutputToOHDSIFormatTransform extends Transform {
 
             @ProcessElement
             public void processElement(@Element Row input, OutputReceiver<Row> output) throws JsonProcessingException, ParseException {
-                // First transform row schemas
-                List<Schema.Field> fields = new LinkedList<>(input.getSchema().getFields());
-                fields.add(Schema.Field.of("section_concept_id", Schema.FieldType.INT32));
-                fields.add(Schema.Field.of("lexical_variant", Schema.FieldType.STRING));
-                fields.add(Schema.Field.of("snippet", Schema.FieldType.STRING));
-                fields.add(Schema.Field.of("note_nlp_concept_id", Schema.FieldType.INT32));
-                fields.add(Schema.Field.of("note_nlp_source_concept_id", Schema.FieldType.INT32));
-                fields.add(Schema.Field.of("nlp_datetime", Schema.FieldType.DATETIME));
-                fields.add(Schema.Field.of("term_modifiers", Schema.FieldType.STRING));
-                Schema schema = Schema.of(fields.toArray(new Schema.Field[0]));
+
 
                 MedXNDrugBean bean = om.readValue(input.getString("nlp_output_json"), MedXNDrugBean.class);
 
@@ -94,4 +98,8 @@ public class MedXNOutputToOHDSIFormatTransform extends Transform {
         }));
     }
 
+    @Override
+    public void init() throws ComponentInitializationException {
+
+    }
 }

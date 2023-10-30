@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.beam.sdk.schemas.Schema;
 import org.apache.beam.sdk.transforms.DoFn;
+import org.apache.beam.sdk.transforms.ParDo;
 import org.apache.beam.sdk.values.PCollection;
 import org.apache.beam.sdk.values.Row;
 import org.apache.uima.UIMAFramework;
@@ -23,6 +24,10 @@ import org.apache.uima.resource.ResourceManager;
 import org.apache.uima.util.CasCreationUtils;
 import org.apache.uima.util.InvalidXMLException;
 import org.ohnlp.backbone.api.Transform;
+import org.ohnlp.backbone.api.annotations.ComponentDescription;
+import org.ohnlp.backbone.api.annotations.ConfigurationProperty;
+import org.ohnlp.backbone.api.components.OneToOneTransform;
+import org.ohnlp.backbone.api.config.InputColumn;
 import org.ohnlp.backbone.api.exceptions.ComponentInitializationException;
 import org.ohnlp.medxn.type.Drug;
 import org.ohnlp.medxn.type.MedAttr;
@@ -40,15 +45,36 @@ import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDesc
  * Given an input row representing a document, duplicates row contents and adds a nlp_output_json column for each
  * drug mention in the input text.
  */
-public class MedXNBackboneTransform extends Transform {
+@ComponentDescription(
+        name = "MedXN",
+        desc = "Extracts Drug Mentions and Associated Information from Text using MedXN"
+)
+public class MedXNBackboneTransform extends OneToOneTransform {
+
+    @ConfigurationProperty(
+            path = "input",
+            desc = "Column to use as input"
+    )
+    private InputColumn inputField;
+
+    private Schema schema;
+
     @Override
-    public void initFromConfig(JsonNode jsonNode) throws ComponentInitializationException {
-        // No Configurable Initialization
+    public Schema calculateOutputSchema(Schema schema) {
+        List<Schema.Field> fields = new LinkedList<>(schema.getFields());
+        fields.add(Schema.Field.of("nlp_output_json", Schema.FieldType.STRING));
+        this.schema = Schema.of(fields.toArray(new Schema.Field[0]));
+        return this.schema;
     }
 
     @Override
     public PCollection<Row> expand(PCollection<Row> input) {
-        return null;
+        return input.apply("Run MedXN", ParDo.of(new MedXNPipelineFunction(inputField.getSourceColumnName(), schema)));
+    }
+
+    @Override
+    public void init() throws ComponentInitializationException {
+
     }
 
     private static class MedXNPipelineFunction extends DoFn<Row, Row> {
@@ -56,6 +82,7 @@ public class MedXNBackboneTransform extends Transform {
         private static ThreadLocal<SimpleDateFormat> sdf = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
 
         private final String textField;
+        private final Schema schema;
 
         // UIMA components are not serializable, and thus must be initialized per-executor via the @Setup annotation
         private transient AnalysisEngine aae;
@@ -63,8 +90,9 @@ public class MedXNBackboneTransform extends Transform {
         private transient CAS cas;
         private transient ObjectMapper om;
 
-        private MedXNPipelineFunction(String textField) {
+        private MedXNPipelineFunction(String textField, Schema schema) {
             this.textField = textField;
+            this.schema = schema;
         }
 
         @Setup
@@ -81,9 +109,6 @@ public class MedXNBackboneTransform extends Transform {
         @ProcessElement
         public void processElement(@Element Row input, OutputReceiver<Row> output) {
             // First create the output row schema
-            List<Schema.Field> fields = new LinkedList<>(input.getSchema().getFields());
-            fields.add(Schema.Field.of("nlp_output_json", Schema.FieldType.STRING));
-            Schema schema = Schema.of(fields.toArray(new Schema.Field[0]));
             String text = input.getString(this.textField);
             cas.reset();
             cas.setDocumentText(text);

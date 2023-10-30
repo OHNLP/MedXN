@@ -6,7 +6,7 @@
 
     <groupId>org.ohnlp.medxn</groupId>
     <artifactId>medxn</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <description>The MedXN medication Information extraction pipeline</description>
 
     <repositories>
@@ -104,12 +104,12 @@
         <dependency>
             <groupId>org.ohnlp.medtagger</groupId>
             <artifactId>medtagger</artifactId>
-            <version>1.0.46</version>
+            <version>1.0.72</version>
         </dependency>
         <dependency>
             <groupId>org.ohnlp.backbone</groupId>
             <artifactId>api</artifactId>
-            <version>1.0.6</version>
+            <version>3.0.24</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
