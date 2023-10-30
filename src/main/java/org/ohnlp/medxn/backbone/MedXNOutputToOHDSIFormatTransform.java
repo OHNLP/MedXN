@@ -10,6 +10,7 @@ import org.apache.beam.sdk.values.PCollection;
 import org.apache.beam.sdk.values.Row;
 import org.joda.time.Instant;
 import org.ohnlp.backbone.api.Transform;
+import org.ohnlp.backbone.api.annotations.ComponentDescription;
 import org.ohnlp.backbone.api.components.OneToOneTransform;
 import org.ohnlp.backbone.api.exceptions.ComponentInitializationException;
 
@@ -32,6 +33,10 @@ import java.util.stream.Collectors;
  * <b>Important:</b> Requires that the OHDSI vocabulary load query first be run and loaded into backbone resources folder
  * as ohdsi_rxnorm_map.csv. Please refer to documentation for further details
  */
+@ComponentDescription(
+        name = "MedXN OHDSI Converter",
+        desc = "Converts MedXN Output to the OHDSI Format for NOTE_NLP Table"
+)
 public class MedXNOutputToOHDSIFormatTransform extends OneToOneTransform {
     private static ThreadLocal<SimpleDateFormat> sdf = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
     private Schema schema;
