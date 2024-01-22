@@ -6,7 +6,7 @@
 
     <groupId>org.ohnlp.medxn</groupId>
     <artifactId>medxn</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
     <description>The MedXN medication Information extraction pipeline</description>
 
     <repositories>
