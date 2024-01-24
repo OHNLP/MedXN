@@ -1,254 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
-  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <primitive>false</primitive>
-  <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="MedExtAE">
-      <import name="org.ohnlp.medxn.aes.MedExtAE"/>
-    </delegateAnalysisEngine>
-     <delegateAnalysisEngine key="ChunkerAE">
-      <import name="org.ohnlp.opennlp.aes.ChunkerAE"/>
-    </delegateAnalysisEngine>
-     <delegateAnalysisEngine key="ACLookupDrugNormAE">
-      <import name="org.ohnlp.medxn.aes.ACLookupDrugNormAE"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="MedNormRxCUIAE">
-      <import name="org.ohnlp.medxn.aes.MedNormRxCUIAE"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="MedNormAE">
-      <import name="org.ohnlp.medxn.aes.MedNormAE"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="ACLookupRxCUIDrugNormAE">
-      <import name="org.ohnlp.medxn.aes.ACLookupRxCUIDrugNormAE"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="MedAttrAE">
-      <import name="org.ohnlp.medxn.aes.MedAttrAE"/>
-    </delegateAnalysisEngine>
-      <delegateAnalysisEngine key="RuleSectionAE">
-      <import name="org.ohnlp.medtagger.aes.RuleSectionAE"/>
-    </delegateAnalysisEngine>
-      <delegateAnalysisEngine key="ACLookupDrugAE">
-      <import name="org.ohnlp.medxn.aes.ACLookupDrugAE"/>
-    </delegateAnalysisEngine>
-       <delegateAnalysisEngine key="POSTaggerAE">
-      <import name="org.ohnlp.opennlp.aes.POSTaggerAE"/>
-    </delegateAnalysisEngine>
-   <delegateAnalysisEngine key="TokenizerAE">
-      <import name="org.ohnlp.opennlp.aes.TokenizerAE"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="SentenceDetectorAE">
-      <import name="org.ohnlp.opennlp.aes.SentenceDetectorAE"/>
-    </delegateAnalysisEngine>
-     <delegateAnalysisEngine key="LineSentenceDetectorAE">
-      <import name="org.ohnlp.medtagger.aes.LineSentenceDetectorAE"/>
-    </delegateAnalysisEngine>
-  </delegateAnalysisEngineSpecifiers>
-  <analysisEngineMetaData>
-    <name>MedXNAggregateTAE</name>
-    <description/>
-    <version>1.0</version>
-    <vendor/>
-    <configurationParameters searchStrategy="language_fallback"/>
-    <configurationParameterSettings/>
-    <flowConstraints>
-      <fixedFlow>
-        <node>SentenceDetectorAE</node>
-        <node>TokenizerAE</node>
-        <node>POSTaggerAE</node>
-        <node>ChunkerAE</node>
-        <node>LineSentenceDetectorAE</node>
-          <node>RuleSectionAE</node>
-  
-        <node>ACLookupDrugAE</node>
-        <node>MedAttrAE</node>
-        <node>MedExtAE</node>
-        <node>MedNormAE</node>
-        <node>ACLookupDrugNormAE</node>
-        <node>MedNormRxCUIAE</node>
-      <node>ACLookupRxCUIDrugNormAE</node>
-      </fixedFlow>
-    </flowConstraints>
-    <typePriorities>
-  <priorityList>
-    <type>org.ohnlp.typesystem.type.textspan.Segment</type>
-    <type>org.ohnlp.typesystem.type.textspan.Sentence</type>
-    <type>org.ohnlp.typesystem.type.syntax.BaseToken</type>
-  </priorityList>
-</typePriorities>
-   <fsIndexCollection/>
-    <capabilities>
-      <capability>
-        <inputs/>
-        <outputs/>
-        <languagesSupported/>
-      </capability>
-    </capabilities>
-    <operationalProperties>
-      <modifiesCas>true</modifiesCas>
-      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
-      <outputsNewCASes>false</outputsNewCASes>
-    </operationalProperties>
-  </analysisEngineMetaData>
-  <resourceManagerConfiguration>
-    <externalResources>
-    <externalResource>
-        <name>RxNorm_BNIN</name>
-        <description>drug dictionary compiled from RxNorm BN, IN, PIN, MIN, and synonym</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/lookup/RxNorm_BNIN.alphanum.BnInPinMinSyn.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-      <externalResource>
-        <name>RxNorm_Name</name>
-        <description>drug dictionary compiled from RxNorm SCDC, SCDF, SCD, SBDC, SBDF, SBD, and SY</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/lookup/RxNorm_Name.norm.txt</fileUrl>
-        </fileResourceSpecifier>
-</externalResource>
-<externalResource>
-        <name>RxCUI</name>
-          <description/>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/lookup/RxCUI.norm.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-       <externalResource>
-        <name>section_map</name>
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>false</primitive>
+    <delegateAnalysisEngineSpecifiers>
+        <delegateAnalysisEngine key="MedExtAE">
+            <import name="org.ohnlp.medxn.aes.MedExtAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ChunkerAE">
+            <import name="org.ohnlp.opennlp.aes.ChunkerAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ACLookupDrugNormAE">
+            <import name="org.ohnlp.medxn.aes.ACLookupDrugNormAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="MedNormRxCUIAE">
+            <import name="org.ohnlp.medxn.aes.MedNormRxCUIAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="MedNormAE">
+            <import name="org.ohnlp.medxn.aes.MedNormAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ACLookupRxCUIDrugNormAE">
+            <import name="org.ohnlp.medxn.aes.ACLookupRxCUIDrugNormAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="MedAttrAE">
+            <import name="org.ohnlp.medxn.aes.MedAttrAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="RuleSectionAE">
+            <import name="org.ohnlp.medtagger.aes.RuleSectionAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ACLookupDrugAE">
+            <import name="org.ohnlp.medxn.aes.ACLookupDrugAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="POSTaggerAE">
+            <import name="org.ohnlp.opennlp.aes.POSTaggerAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="TokenizerAE">
+            <import name="org.ohnlp.opennlp.aes.TokenizerAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="SentenceDetectorAE">
+            <import name="org.ohnlp.opennlp.aes.SentenceDetectorAE"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="LineSentenceDetectorAE">
+            <import name="org.ohnlp.medtagger.aes.LineSentenceDetectorAE"/>
+        </delegateAnalysisEngine>
+    </delegateAnalysisEngineSpecifiers>
+    <analysisEngineMetaData>
+        <name>MedXNAggregateTAE</name>
         <description/>
-        <fileResourceSpecifier>
-          <fileUrl>file:medtaggerresources/sectag/SecTag.section.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-      
+        <version>1.0</version>
+        <vendor/>
+        <configurationParameters searchStrategy="language_fallback"/>
+        <configurationParameterSettings/>
+        <flowConstraints>
+            <fixedFlow>
+                <node>SentenceDetectorAE</node>
+                <node>TokenizerAE</node>
+                <node>POSTaggerAE</node>
+                <node>ChunkerAE</node>
+                <node>LineSentenceDetectorAE</node>
+                <node>RuleSectionAE</node>
 
-        <externalResource>
-        
-        <name>regExPatterns</name>
-        <description>regular expressions of drug attributes</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/regExPatterns.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-      <externalResource>
-        <name>falseMedDict</name>
-        <description>list of potentially false drugs</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/lookup/falseMedDict.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
- 
-        <externalResource>
-                                <name>TokenModel</name>
-                                <description/>
-        <fileResourceSpecifier>
-                                        <fileUrl>file:opennlpresources/models-1.5/en-token.bin</fileUrl>
-                                </fileResourceSpecifier>
-                                <implementationName>opennlp.uima.tokenize.TokenizerModelResourceImpl</implementationName>
-                        </externalResource>
-                        
-                        <externalResource>
-                                <name>SentenceModel</name>
-                                <description/>
-        <fileResourceSpecifier>
-                                        <fileUrl>file:opennlpresources/models-1.5/en-sent.bin</fileUrl>
-                                </fileResourceSpecifier>
-                                <implementationName>opennlp.uima.sentdetect.SentenceModelResourceImpl</implementationName>
-                        </externalResource>
-                
-                        <externalResource>
-                                <name>ChunkerModel</name>
-                                <description/>
-        <fileResourceSpecifier>
-                                        <fileUrl>file:opennlpresources/mayomodels/chunk-model.claims-1.5.zip</fileUrl>
-                                </fileResourceSpecifier>
-                                <implementationName>opennlp.uima.chunker.ChunkerModelResourceImpl</implementationName>
-                        </externalResource>
-                        <externalResource>
-				<name>PosModel</name>
-				<description/>
-        <fileResourceSpecifier>
-					<fileUrl>file:opennlpresources/mayomodels/mayo-pos.zip</fileUrl>
-				</fileResourceSpecifier>
-				<implementationName>opennlp.uima.postag.POSModelResourceImpl</implementationName>
-			</externalResource>
-              
-                <externalResource>
-        <name>openclass</name>
-        <description/>
-        <fileResourceSpecifier>
-          <fileUrl>file:medtaggerresources/lvg/openclasswords.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-         <externalResource>
-        <name>lvg_dict</name>
-        <description/>
-        <fileResourceSpecifier>
-          <fileUrl>file:medtaggerresources/lvg/LRAGR_2011AB</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-    <externalResource>
-        <name>doseDict</name>
-        <description>A dictionary containing dose information used for MedNormRxCUIAE.</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:medxnresources/lookup/doseDict.txt</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-    </externalResources>
-		<externalResourceBindings>    
-		<externalResourceBinding>
-				<key>RuleSectionAE/section_map</key>
-				<resourceName>section_map</resourceName>
-			</externalResourceBinding>
-		<externalResourceBinding>
-				<key>RuleSectionAE/lvg_dict</key>
-				<resourceName>lvg_dict</resourceName>
-			</externalResourceBinding>
-			<externalResourceBinding>
-				<key>RuleSectionAE/openclass</key>
-				<resourceName>openclass</resourceName>
-			</externalResourceBinding>
-		 
-    <externalResourceBinding>
-        <key>ChunkerAE/opennlp.uima.ModelName</key>
-        <resourceName>ChunkerModel</resourceName>
-      </externalResourceBinding>
-       <externalResourceBinding>
-        <key>POSTaggerAE/opennlp.uima.ModelName</key>
-        <resourceName>PosModel</resourceName>
-      </externalResourceBinding>
-      <externalResourceBinding>
-        <key>TokenizerAE/opennlp.uima.ModelName</key>
-        <resourceName>TokenModel</resourceName>
-      </externalResourceBinding>
-      <externalResourceBinding>
-        <key>SentenceDetectorAE/opennlp.uima.ModelName</key>
-        <resourceName>SentenceModel</resourceName>
-      </externalResourceBinding>
-      <externalResourceBinding>
-        <key>MedAttrAE/regExPatterns</key>
-        <resourceName>regExPatterns</resourceName>
-      </externalResourceBinding>
-      <externalResourceBinding>
-        <key>ACLookupDrugNormAE/RxNorm_Name</key>
-        <resourceName>RxNorm_Name</resourceName>
-      </externalResourceBinding>
-    <externalResourceBinding>
-        <key>MedNormRxCUIAE/doseDict</key>
-        <resourceName>doseDict</resourceName>
-      </externalResourceBinding>
-      <externalResourceBinding>
-        <key>MedExtAE/falseMedDict</key>
-        <resourceName>falseMedDict</resourceName>
-      </externalResourceBinding>
-    <externalResourceBinding>
-        <key>ACLookupDrugAE/RxNorm_BNIN</key>
-        <resourceName>RxNorm_BNIN</resourceName>
-      </externalResourceBinding>
-    <externalResourceBinding>
-        <key>ACLookupRxCUIDrugNormAE/RxCUI</key>
-        <resourceName>RxCUI</resourceName>
-      </externalResourceBinding>
-    </externalResourceBindings>
-  	  </resourceManagerConfiguration>
+                <node>ACLookupDrugAE</node>
+                <node>MedAttrAE</node>
+                <node>MedExtAE</node>
+                <node>MedNormAE</node>
+                <node>ACLookupDrugNormAE</node>
+                <node>MedNormRxCUIAE</node>
+                <node>ACLookupRxCUIDrugNormAE</node>
+            </fixedFlow>
+        </flowConstraints>
+        <typePriorities>
+            <priorityList>
+                <type>org.ohnlp.typesystem.type.textspan.Segment</type>
+                <type>org.ohnlp.typesystem.type.textspan.Sentence</type>
+                <type>org.ohnlp.typesystem.type.syntax.BaseToken</type>
+            </priorityList>
+        </typePriorities>
+        <fsIndexCollection/>
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs/>
+                <languagesSupported/>
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+    <resourceManagerConfiguration>
+        <externalResources>
+            <externalResource>
+                <name>RxNorm_BNIN</name>
+                <description>drug dictionary compiled from RxNorm BN, IN, PIN, MIN, and synonym</description>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/lookup/RxNorm_BNIN.alphanum.BnInPinMinSyn.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>RxNorm_Name</name>
+                <description>drug dictionary compiled from RxNorm SCDC, SCDF, SCD, SBDC, SBDF, SBD, and SY</description>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/lookup/RxNorm_Name.norm.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>RxCUI</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/lookup/RxCUI.norm.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>section_map</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medtaggerresources/sectag/SecTag.section.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+
+
+            <externalResource>
+
+                <name>regExPatterns</name>
+                <description>regular expressions of drug attributes</description>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/regExPatterns.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>falseMedDict</name>
+                <description>list of potentially false drugs</description>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/lookup/falseMedDict.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+
+            <externalResource>
+                <name>TokenModel</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:opennlpresources/models-1.5/en-token.bin</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.tokenize.TokenizerModelResourceImpl</implementationName>
+            </externalResource>
+
+            <externalResource>
+                <name>SentenceModel</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:opennlpresources/models-1.5/en-sent.bin</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.sentdetect.SentenceModelResourceImpl</implementationName>
+            </externalResource>
+
+            <externalResource>
+                <name>ChunkerModel</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:opennlpresources/mayomodels/chunk-model.claims-1.5.zip</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.chunker.ChunkerModelResourceImpl</implementationName>
+            </externalResource>
+            <externalResource>
+                <name>PosModel</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:opennlpresources/mayomodels/mayo-pos.zip</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.postag.POSModelResourceImpl</implementationName>
+            </externalResource>
+
+            <externalResource>
+                <name>openclass</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medtaggerresources/lvg/openclasswords.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>lvg_dict</name>
+                <description/>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medtaggerresources/lvg/LRAGR_2011AB</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+            <externalResource>
+                <name>doseDict</name>
+                <description>A dictionary containing dose information used for MedNormRxCUIAE.</description>
+                <fileResourceSpecifier>
+                    <fileUrl>file:medxnresources/lookup/doseDict.txt</fileUrl>
+                </fileResourceSpecifier>
+            </externalResource>
+        </externalResources>
+        <externalResourceBindings>
+            <externalResourceBinding>
+                <key>RuleSectionAE/section_map</key>
+                <resourceName>section_map</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>RuleSectionAE/lvg_dict</key>
+                <resourceName>lvg_dict</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>RuleSectionAE/openclass</key>
+                <resourceName>openclass</resourceName>
+            </externalResourceBinding>
+
+            <externalResourceBinding>
+                <key>ChunkerAE/opennlp.uima.ModelName</key>
+                <resourceName>ChunkerModel</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>POSTaggerAE/opennlp.uima.ModelName</key>
+                <resourceName>PosModel</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>TokenizerAE/opennlp.uima.ModelName</key>
+                <resourceName>TokenModel</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>SentenceDetectorAE/opennlp.uima.ModelName</key>
+                <resourceName>SentenceModel</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>MedAttrAE/regExPatterns</key>
+                <resourceName>regExPatterns</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>ACLookupDrugNormAE/RxNorm_Name</key>
+                <resourceName>RxNorm_Name</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>MedNormRxCUIAE/doseDict</key>
+                <resourceName>doseDict</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>MedExtAE/falseMedDict</key>
+                <resourceName>falseMedDict</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>ACLookupDrugAE/RxNorm_BNIN</key>
+                <resourceName>RxNorm_BNIN</resourceName>
+            </externalResourceBinding>
+            <externalResourceBinding>
+                <key>ACLookupRxCUIDrugNormAE/RxCUI</key>
+                <resourceName>RxCUI</resourceName>
+            </externalResourceBinding>
+        </externalResourceBindings>
+    </resourceManagerConfiguration>
 </analysisEngineDescription>
